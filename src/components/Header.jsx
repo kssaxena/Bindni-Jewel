@@ -73,7 +73,7 @@ function Navbar({ className }) {
             />
           </div>
         </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Categories">
+        <MenuItem setActive={setActive} active={active} item="Collections">
           <div className="  text-sm grid grid-cols-2 gap-10 p-4">
             {productArray.map((items) => (
               <ProductItem

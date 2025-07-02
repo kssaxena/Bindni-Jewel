@@ -11,7 +11,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="bg-[#D6D7C2]">
+    <div className="bg-[#D6D7C2] fredoka-font ">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
