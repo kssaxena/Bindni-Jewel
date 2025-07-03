@@ -114,12 +114,10 @@ export function Header() {
     <div className="relative w-full flex items-center justify-around ">
       <img
         className="w-56 absolute top-2 left-20 "
-        src={`https://ik.imagekit.io/pz8qfunss/bindni.png?updatedAt=1751308457192`}
+        src={`https://ik.imagekit.io/pz8qfunss/erasebg-transformed.png?updatedAt=1751537528304`}
       />
       <Navbar className="top-2" />
-      <div>
-
-      </div>
+      <div></div>
       {/* <img
         className="w-56 absolute top-2 right-20 "
         src={`https://ik.imagekit.io/pz8qfunss/bindni.png?updatedAt=1751308457192`}

@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import { Header } from "./components/Header";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
+import Footer from "./components/Footer";
 
 // import './App.css'
 
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

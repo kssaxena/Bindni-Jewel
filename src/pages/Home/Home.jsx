@@ -456,7 +456,7 @@ const Home = () => {
           ))}
         </main>
       </section>
-      <section className="flex flex-col py-40 select-none">
+      <section className="flex flex-col pt-40  select-none pb-10">
         <div className="flex">
           <div className="w-1/2 p-20 flex flex-col gap-10">
             <h1 className=" tracking-wider text-[65px] ">
