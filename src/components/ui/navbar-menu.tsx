@@ -11,15 +11,16 @@ const transition = {
   restSpeed: 0.001,
 };
 
-export const MenuItem = ({ setActive, active, item, children }) => {
+export const MenuItem = ({ setActive, active, item, children, whereTo }) => {
   return (
     <div onMouseEnter={() => setActive(item)} className="relative ">
-      <motion.p
+      <motion.a
+        href={whereTo}
         transition={{ duration: 0.3 }}
         className="cursor-pointer text-black hover:opacity-[0.9] hover:border-b ease-in-out"
       >
         {item}
-      </motion.p>
+      </motion.a>
       {active !== null && (
         <motion.div
           initial={{ opacity: 0, scale: 0.85, y: 10 }}

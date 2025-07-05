@@ -29,3 +29,45 @@
 .megrim-font {
   font-family: "Megrim", cursive;
 }
+@layer utilities {
+  @variants responsive {
+    /* Hide scrollbar for Chrome, Safari, and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge, and Firefox */
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+      /* Firefox */
+    }
+  }
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
+  padding: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #18181b;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1d2739;
+  border-radius: 0px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #1d2739;
+}

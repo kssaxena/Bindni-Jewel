@@ -5,6 +5,7 @@ import { Header } from "./components/Header";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Footer from "./components/Footer";
+import Collection from "./pages/Collections/Collection";
 
 // import './App.css'
 
@@ -16,6 +17,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/all-collections" element={<Collection />} />
       </Routes>
       <Footer />
     </div>

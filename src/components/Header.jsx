@@ -8,41 +8,43 @@ import {
 } from "../components/ui/navbar-menu";
 import { cn } from "../lib/utils";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { FaFacebook, FaInstagram, FaWhatsapp, FaYoutube } from "react-icons/fa";
 
 const productArray = [
   {
     title: "Imitation Jewellery",
-    href: "#",
+    href: "/all-collections",
     src: "https://ik.imagekit.io/pz8qfunss/Header_Products/Screenshot%202025-06-30%20at%204.40.21%E2%80%AFPM.png?updatedAt=1751282003358",
     description: "Prepare for tech interviews like never before.",
   },
   {
     title: "Lehenga",
-    href: "#",
+    href: "/all-collections",
     src: "https://ik.imagekit.io/pz8qfunss/Header_Products/Screenshot%202025-06-30%20at%204.42.45%E2%80%AFPM.png?updatedAt=1751282003302",
     description: "Prepare for tech interviews like never before.",
   },
   {
     title: "Saree",
-    href: "#",
+    href: "/all-collections",
     src: "https://ik.imagekit.io/pz8qfunss/Header_Products/Screenshot%202025-06-30%20at%204.50.58%E2%80%AFPM.png?updatedAt=1751282479536",
     description: "Prepare for tech interviews like never before.",
   },
   {
     title: "Handmade Bags",
-    href: "#",
+    href: "/all-collections",
     src: "https://ik.imagekit.io/pz8qfunss/Header_Products/Screenshot%202025-06-30%20at%204.41.03%E2%80%AFPM.png?updatedAt=1751282002864",
     description: "Prepare for tech interviews like never before.",
   },
   {
     title: "Handicraft Items",
-    href: "#",
+    href: "/all-collections",
     src: "https://ik.imagekit.io/pz8qfunss/Header_Products/Screenshot%202025-06-30%20at%204.41.31%E2%80%AFPM.png?updatedAt=1751282003181",
     description: "Prepare for tech interviews like never before.",
   },
   {
     title: "Blankets",
-    href: "#",
+    href: "/all-collections",
     src: "https://ik.imagekit.io/pz8qfunss/Header_Products/Screenshot%202025-06-30%20at%204.42.13%E2%80%AFPM.png?updatedAt=1751282025123",
     description: "Prepare for tech interviews like never before.",
   },
@@ -63,7 +65,7 @@ function Navbar({ className }) {
       )}
     >
       <Menu setActive={setActive}>
-        <MenuItem setActive={setActive} active={active} item="Home">
+        <MenuItem setActive={setActive} active={active} item="Home" whereTo="/">
           <div className="  text-sm gap-10 ">
             <ProductItem
               href="/"
@@ -73,7 +75,12 @@ function Navbar({ className }) {
             />
           </div>
         </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Collections">
+        <MenuItem
+          setActive={setActive}
+          active={active}
+          item="Collections"
+          whereTo="/all-collections"
+        >
           <div className="  text-sm grid grid-cols-2 gap-10 p-4">
             {productArray.map((items) => (
               <ProductItem
@@ -86,17 +93,34 @@ function Navbar({ className }) {
             ))}
           </div>
         </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Gallery">
+        <MenuItem
+          setActive={setActive}
+          active={active}
+          item="Gallery"
+          whereTo="/gallery"
+        >
+          {/* Gallery section can be added here */}
           <div className="  text-sm grid grid-cols-2 gap-10 p-4"></div>
         </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Services">
+        <MenuItem
+          setActive={setActive}
+          active={active}
+          item="Services"
+          whereTo="/services"
+        >
+          {/* Services section can be added here */}
           <div className="flex flex-col space-y-4 text-sm">
             {ServiceArray.map((items) => (
               <HoveredLink href={items.href}>{items.name}</HoveredLink>
             ))}
           </div>
         </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="About">
+        <MenuItem
+          setActive={setActive}
+          active={active}
+          item="About"
+          whereTo="/about"
+        >
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/blog">Blog</HoveredLink>
             <HoveredLink href="/carrier">Carrier</HoveredLink>
@@ -111,17 +135,23 @@ function Navbar({ className }) {
 
 export function Header() {
   return (
-    <div className="relative w-full flex items-center justify-around ">
+    <motion.div
+      initial={{ y: -100, opacity: 1 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.5, delay: 0.5 }}
+      className="relative w-full flex items-center justify-around "
+    >
       <img
-        className="w-56 absolute top-2 left-20 "
-        src={`https://ik.imagekit.io/pz8qfunss/erasebg-transformed.png?updatedAt=1751537528304`}
+        className="w-48 absolute top-2 left-20 "
+        src={`https://ik.imagekit.io/pz8qfunss/oie_FNGIcUJCB8uq.png?updatedAt=1751607165073`}
       />
       <Navbar className="top-2" />
-      <div></div>
-      {/* <img
-        className="w-56 absolute top-2 right-20 "
-        src={`https://ik.imagekit.io/pz8qfunss/bindni.png?updatedAt=1751308457192`}
-      /> */}
-    </div>
+      <div className="flex justify-end items-center w-full gap-5 px-20 py-10">
+        <FaInstagram className="text-2xl " />
+        <FaWhatsapp className="text-2xl " />
+        <FaFacebook className="text-2xl " />
+        <FaYoutube className="text-2xl " />
+      </div>
+    </motion.div>
   );
 }
