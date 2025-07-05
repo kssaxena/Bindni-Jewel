@@ -10,51 +10,8 @@ import { cn } from "../lib/utils";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { FaFacebook, FaInstagram, FaWhatsapp, FaYoutube } from "react-icons/fa";
+import { productArray, ServiceArray } from "../Constants/Constants";
 
-const productArray = [
-  {
-    title: "Imitation Jewellery",
-    href: "/all-collections",
-    src: "https://ik.imagekit.io/pz8qfunss/Header_Products/Screenshot%202025-06-30%20at%204.40.21%E2%80%AFPM.png?updatedAt=1751282003358",
-    description: "Prepare for tech interviews like never before.",
-  },
-  {
-    title: "Lehenga",
-    href: "/all-collections",
-    src: "https://ik.imagekit.io/pz8qfunss/Header_Products/Screenshot%202025-06-30%20at%204.42.45%E2%80%AFPM.png?updatedAt=1751282003302",
-    description: "Prepare for tech interviews like never before.",
-  },
-  {
-    title: "Saree",
-    href: "/all-collections",
-    src: "https://ik.imagekit.io/pz8qfunss/Header_Products/Screenshot%202025-06-30%20at%204.50.58%E2%80%AFPM.png?updatedAt=1751282479536",
-    description: "Prepare for tech interviews like never before.",
-  },
-  {
-    title: "Handmade Bags",
-    href: "/all-collections",
-    src: "https://ik.imagekit.io/pz8qfunss/Header_Products/Screenshot%202025-06-30%20at%204.41.03%E2%80%AFPM.png?updatedAt=1751282002864",
-    description: "Prepare for tech interviews like never before.",
-  },
-  {
-    title: "Handicraft Items",
-    href: "/all-collections",
-    src: "https://ik.imagekit.io/pz8qfunss/Header_Products/Screenshot%202025-06-30%20at%204.41.31%E2%80%AFPM.png?updatedAt=1751282003181",
-    description: "Prepare for tech interviews like never before.",
-  },
-  {
-    title: "Blankets",
-    href: "/all-collections",
-    src: "https://ik.imagekit.io/pz8qfunss/Header_Products/Screenshot%202025-06-30%20at%204.42.13%E2%80%AFPM.png?updatedAt=1751282025123",
-    description: "Prepare for tech interviews like never before.",
-  },
-];
-const ServiceArray = [
-  { name: "Artificial Jewelry Franchise", href: "/franchise-enquiry-jewelry" },
-  { name: "Ethnic Wears Franchise", href: "/franchise-enquiry-ethnic" },
-  { name: "Franchise for Both", href: "/franchise-enquiry-all" },
-  { name: "Branding", href: "/branding" },
-];
 function Navbar({ className }) {
   const [active, setActive] = useState(null);
   return (

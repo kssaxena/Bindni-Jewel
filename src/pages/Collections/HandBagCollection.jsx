@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { necklaceCollection } from "../../Constants/Constants";
+import { handBagCollection } from "../../Constants/Constants";
 const HandBagCollection = () => {
   const zoomVariant = {
     hidden: { scale: 0.8, opacity: 1 / 2 },
@@ -16,7 +16,7 @@ const HandBagCollection = () => {
   };
   return (
     <div className="flex flex-wrap justify-center items-center gap-20 my-20 ">
-      {necklaceCollection.map((item) => (
+      {handBagCollection.map((item) => (
         <motion.div
           variants={zoomVariant}
           initial="hidden"

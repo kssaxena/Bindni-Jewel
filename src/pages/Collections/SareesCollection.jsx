@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { necklaceCollection } from "../../Constants/Constants";
+import { sareeCollection } from "../../Constants/Constants";
 const SareesCollection = () => {
   const zoomVariant = {
     hidden: { scale: 0.8, opacity: 1 / 2 },
@@ -16,7 +16,7 @@ const SareesCollection = () => {
   };
   return (
     <div className="flex flex-wrap justify-center items-center gap-20 my-20 ">
-      {necklaceCollection.map((item) => (
+      {sareeCollection.map((item) => (
         <motion.div
           variants={zoomVariant}
           initial="hidden"
