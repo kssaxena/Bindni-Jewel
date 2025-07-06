@@ -20,6 +20,10 @@ const Home = () => {
     }),
   };
 
+  const handleCollectionPage = () => {
+    window.location.href = "/all-collections";
+  };
+
   return (
     <div className=" cinzel-font h-fit">
       <section className="landing-section flex flex-row items-center justify-evenly w-full h-screen">
@@ -63,8 +67,8 @@ const Home = () => {
               />
             </motion.div>
           </div>
-          <div className="flex flex-col items-center justify-center  h-3/4 gap-20 ">
-            <div className="border-black border-r border-t-2 p-5 rounded-tr-[10vh] ">
+          <div className="flex flex-col items-center justify-center  h-3/4 gap-20 pb-20">
+            <div className="border-black border-r border-t-2 p-5 rounded-tr-[10vh]">
               <motion.img
                 initial={{ y: -100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
@@ -73,10 +77,7 @@ const Home = () => {
                 src={`https://ik.imagekit.io/pz8qfunss/Home/Padmakshi%20Jewellers%20-%20Product%20Photography.jpeg?updatedAt=1751285085823`}
               />
             </div>
-            <Button
-              Label={"Explore More"}
-              onClick={() => window.location.reload()}
-            />
+            <Button Label={"Explore More"} onClick={handleCollectionPage} />
           </div>
           <div className="flex flex-col items-center justify-around  h-3/4 ">
             <motion.div
@@ -101,7 +102,7 @@ const Home = () => {
         <div className="flex flex-row">
           <video
             className="w-60 translate-x-1/2 mt-20 mr-20 rounded-full border-8 border-[#D6D7C2]"
-            src="https://ik.imagekit.io/pz8qfunss/Home/Untitled%20design%20(1).mp4?updatedAt=1751376140133" 
+            src="https://ik.imagekit.io/pz8qfunss/Home/Untitled%20design%20(1).mp4?updatedAt=1751376140133"
             autoPlay
             loop
             muted
@@ -127,7 +128,7 @@ const Home = () => {
             we make luxury accessible for everyone.
           </p>
           <div className={"w-full justify-center items-center flex"}>
-            <Button Label="Explore Collection" />
+            <Button Label="Explore Collection" onClick={handleCollectionPage} />
           </div>
         </div>
       </section>
@@ -517,7 +518,11 @@ const Home = () => {
           </div>
         </div>
         <div className="w-full flex justify-center items-center ">
-          <Button Label="Explore More" className={"w-fit"} />
+          <Button
+            Label="Explore More"
+            className={"w-fit"}
+            onClick={handleCollectionPage}
+          />
         </div>
       </section>
     </div>

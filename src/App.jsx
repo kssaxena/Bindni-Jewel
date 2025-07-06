@@ -6,18 +6,18 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Footer from "./components/Footer";
 import Collection from "./pages/Collections/Collection";
+import Gallery from "./pages/Gallery/Gallery";
 
 // import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div className="bg-[#D6D7C2] fredoka-font ">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/all-collections" element={<Collection />} />
+        <Route path="/gallery" element={<Gallery />} />
       </Routes>
       <Footer />
     </div>
