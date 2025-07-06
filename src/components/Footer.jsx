@@ -10,15 +10,16 @@ const Footer = () => {
 
   const toggleForm = () => setIsOpen(!isOpen);
   return (
-    <div className="border-t py-10 mx-20">
+    <div className="border-t py-10 mx-20 z-50">
       <div className="flex justify-center items-center">
         <FaInstagram className="text-2xl " />
         <FaWhatsapp className="text-2xl " />
         <FaFacebook className="text-2xl " />
         <FaYoutube className="text-2xl " />
       </div>
-      <div className="text-center mt-10">
+      <div className="text-center mt-10 z-50 w-full flex justify-center items-center">
         <Button
+          className={"z-50 absolute w-fit"}
           onClick={toggleForm}
           Label={isOpen ? "Close Enquiry Form" : "Open Enquiry Form"}
         />

@@ -57,7 +57,14 @@ function Navbar({ className }) {
           whereTo="/gallery"
         >
           {/* Gallery section can be added here */}
-          <div className="  text-sm grid grid-cols-2 gap-10 p-4"></div>
+          <div className="  text-sm">
+            <ProductItem
+              href="/gallery"
+              src={
+                "https://ik.imagekit.io/pz8qfunss/Header_Products/Screenshot%202025-07-07%20at%201.16.43%E2%80%AFAM.png?updatedAt=1751831306401"
+              }
+            />
+          </div>
         </MenuItem>
         <MenuItem
           setActive={setActive}
@@ -96,7 +103,7 @@ export function Header() {
       initial={{ y: -100, opacity: 1 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5, delay: 0.5 }}
-      className="relative w-full flex items-center justify-around "
+      className="relative w-full flex items-center justify-around z-50"
     >
       <img
         className="w-48 absolute top-2 left-20 "
