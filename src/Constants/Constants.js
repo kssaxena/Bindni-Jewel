@@ -315,3 +315,17 @@ export const handBagCollection = [
     url: "https://ik.imagekit.io/pz8qfunss/Products/bags/velvet.jpeg?updatedAt=1751728084260",
   },
 ];
+
+// gallery
+export const galleryBannerImages = [
+  "https://ik.imagekit.io/pz8qfunss/Gallery/Gallery_Banner/create%20an%20image%20with%20a%20tag%20_New%20Arrivals_%20with%20adding%20indian%20traditional%20handbags%20in%20the%20background%20write%20the%20text%20on%20the%20left%20side%20of%20the%20image%20and%20make%20it%20look%20asthetic.jpg?updatedAt=1751825753772",
+  "https://ik.imagekit.io/pz8qfunss/Gallery/Gallery_Banner/create%20an%20image%20with%20a%20tag%20_New%20Arrivals_%20with%20adding%20indian%20traditional%20handbags%20in%20the%20background%20write%20the%20text%20on%20the%20left%20side%20of%20the%20image%20and%20make%20it%20look%20asthetic%20(1).jpg?updatedAt=1751825753758",
+  "https://ik.imagekit.io/pz8qfunss/Gallery/Gallery_Banner/create%20an%20image%20with%20a%20tag%20_Our%20new%20Collections_%20with%20adding%20blankets%20in%20the%20background%20write%20the%20text%20on%20the%20right%20side%20of%20the%20image%20and%20make%20it%20look%20asthetic.jpg?updatedAt=1751825753719",
+  "https://ik.imagekit.io/pz8qfunss/Gallery/Gallery_Banner/create%20an%20image%20with%20a%20tag%20_visit%20our%20new%20Collections_%20with%20adding%20handcrafts%20in%20the%20background%20write%20the%20text%20on%20the%20right%20side%20of%20the%20image%20and%20make%20it%20look%20asthetic%20(1).jpg?updatedAt=1751825753695",
+  "https://ik.imagekit.io/pz8qfunss/Gallery/Gallery_Banner/create%20an%20image%20with%20a%20tag%20_Our%20new%20Collections_%20with%20adding%20jewelrries%20in%20the%20background%20write%20the%20text%20on%20the%20right%20side%20of%20the%20image%20and%20make%20it%20look%20asthetic.jpg?updatedAt=1751825753693",
+  "https://ik.imagekit.io/pz8qfunss/Gallery/Gallery_Banner/create%20an%20image%20with%20a%20tag%20_Our%20new%20Collections_%20with%20adding%20jewelrries%20in%20the%20background%20write%20the%20text%20on%20the%20left%20or%20right%20side%20of%20the%20image%20and%20make%20it%20look%20asthetic.jpg?updatedAt=1751825753408",
+  "https://ik.imagekit.io/pz8qfunss/Gallery/Gallery_Banner/create%20an%20image%20with%20a%20tag%20_Our%20new%20Collections_%20with%20adding%20blankets%20in%20the%20background%20write%20the%20text%20on%20the%20right%20side%20of%20the%20image%20and%20make%20it%20look%20asthetic%20(1).jpg?updatedAt=1751825753500",
+  "https://ik.imagekit.io/pz8qfunss/Gallery/Gallery_Banner/create%20an%20image%20with%20a%20tag%20_New%20Arrivals_%20with%20adding%20handbags%20in%20the%20background%20write%20the%20text%20on%20the%20left%20side%20of%20the%20image%20and%20make%20it%20look%20asthetic.jpg?updatedAt=1751825753556",
+  "https://ik.imagekit.io/pz8qfunss/Gallery/Gallery_Banner/create%20an%20image%20with%20a%20tag%20_visit%20our%20new%20Collections_%20with%20adding%20handcrafts%20in%20the%20background%20write%20the%20text%20on%20the%20right%20side%20of%20the%20image%20and%20make%20it%20look%20asthetic.jpg?updatedAt=1751825753568",
+  "https://ik.imagekit.io/pz8qfunss/Gallery/Gallery_Banner/create%20an%20image%20with%20a%20tag%20_Our%20new%20Collections_%20with%20adding%20ethnic%20wears%20in%20the%20background%20write%20the%20text%20on%20the%20right%20side%20of%20the%20image%20and%20make%20it%20look%20asthetic.jpg?updatedAt=1751825753607",
+];
