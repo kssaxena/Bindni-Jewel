@@ -27,7 +27,7 @@ function Navbar({ className }) {
             <ProductItem
               href="/"
               src={
-                "https://ik.imagekit.io/pz8qfunss/Header_Products/Screenshot%202025-06-30%20at%204.40.21%E2%80%AFPM.png?updatedAt=1751282003358"
+                "https://ik.imagekit.io/pz8qfunss/Header_Products/Screenshot%202025-07-06%20at%202.46.40%E2%80%AFPM.png?updatedAt=1751793455109"
               }
             />
           </div>

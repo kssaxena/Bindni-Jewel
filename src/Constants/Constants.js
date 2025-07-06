@@ -44,6 +44,12 @@ export const ServiceArray = [
   { name: "Branding", href: "/branding" },
 ];
 
+//home
+export const words1 =
+  "It doesn’t overshadow your natural beauty or your style, but instead enhances it, adding just the right amount of sparkle and personality. Whether it’s a delicate necklace, bold earrings, or a classic bracelet, the right piece of jewelry brings balance and elegance, completing your look effortlessly. It’s that subtle detail that elevates the everyday into something extraordinary.";
+export const words2 =
+  "It enhances and elevates without overpowering. Just as a pinch of the right seasoning brings a dish to life, the right piece of jewelry adds that finishing touch to any outfit, expressing personality, style, and confidence. Whether it's a subtle shimmer or a bold statement, jewelry has the power to transform the ordinary into something unforgettable. It's the detail that completes the look, making every moment feel a little more special.";
+
 // collection page
 export const necklaceCollection = [
   {

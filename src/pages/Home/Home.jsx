@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Button from "../../components/Button";
+import { Typewriter } from "react-simple-typewriter";
+import { TextGenerateEffect } from "../../components/ui/text-generate-effect";
+import { words1, words2 } from "../../Constants/Constants";
 
 const Home = () => {
   const [activeSection, setActiveSection] = useState("Necklaces");
@@ -30,17 +33,42 @@ const Home = () => {
           <div className="flex flex-col items-center justify-around  h-3/4 ">
             <h1 className=" tracking-wider text-[60px]">
               Happiness of <br /> women
+              {/* <span className="typewriter-text inline-block">
+                Happiness of <br /> women
+              </span> */}
+              {/* <span>
+                <Typewriter
+                  words={["Happiness of women"]}
+                  loop={1}
+                  cursor
+                  cursorStyle="_"
+                  typeSpeed={70}
+                  deleteSpeed={50}
+                  delaySpeed={1000}
+                />
+              </span> */}
             </h1>
-            <div className="flex flex-col items-center justify-center border-black border border-t-2 p-5 rounded-tr-[10vh] rounded-bl-[10vh] border-l-2">
-              <img
+            <motion.div
+              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, x: -100 }}
+              transition={{ duration: 1 }}
+              className="flex flex-col items-center justify-center border-black border border-t-2 p-5 rounded-tr-[10vh] rounded-bl-[10vh] border-l-2"
+            >
+              <motion.img
+                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, x: 100 }}
+                transition={{ duration: 1 }}
                 className="w-60 rounded-tr-[10vh] rounded-bl-[10vh] drop-shadow-2xl shadow-[#FEF9E9] "
                 src={`https://ik.imagekit.io/pz8qfunss/Home/ring.jpeg?updatedAt=1751285826577`}
               />
-            </div>
+            </motion.div>
           </div>
           <div className="flex flex-col items-center justify-center  h-3/4 gap-20 ">
             <div className="border-black border-r border-t-2 p-5 rounded-tr-[10vh] ">
-              <img
+              <motion.img
+                initial={{ y: -100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
                 className="w-96 rounded-tr-[10vh] rounded-bl-[10vh] drop-shadow-2xl shadow-[#FEF9E9]"
                 src={`https://ik.imagekit.io/pz8qfunss/Home/Padmakshi%20Jewellers%20-%20Product%20Photography.jpeg?updatedAt=1751285085823`}
               />
@@ -51,12 +79,20 @@ const Home = () => {
             />
           </div>
           <div className="flex flex-col items-center justify-around  h-3/4 ">
-            <div className="border-black border-l-3 border-b p-5 rounded-bl-[10vh] ">
-              <img
+            <motion.div
+              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, x: 100 }}
+              transition={{ duration: 1 }}
+              className="border-black border-l-3 border-b p-5 rounded-bl-[10vh] "
+            >
+              <motion.img
+                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, x: -100 }}
+                transition={{ duration: 1 }}
                 className="w-60 rounded-tr-[10vh] rounded-bl-[10vh] drop-shadow-2xl shadow-[#FEF9E9] "
                 src={`https://ik.imagekit.io/pz8qfunss/Home/Jewellery%20Set.jpeg?updatedAt=1751285913022`}
               />
-            </div>
+            </motion.div>
             <h1 className="text-[60px] tracking-wide">Trendy jewelry</h1>
           </div>
         </div>
@@ -64,19 +100,13 @@ const Home = () => {
       <section className="praise flex justify-around items-center py-20">
         <div className="flex flex-row">
           <video
-            // className="w-60 h-full object-cover bg-red-400"
             className="w-60 translate-x-1/2 mt-20 mr-20 rounded-full border-8 border-[#D6D7C2]"
-            src="https://ik.imagekit.io/pz8qfunss/Home/Untitled%20design%20(1).mp4?updatedAt=1751376140133" // replace with your video URL
+            src="https://ik.imagekit.io/pz8qfunss/Home/Untitled%20design%20(1).mp4?updatedAt=1751376140133" 
             autoPlay
             loop
             muted
             playsInline
           />
-
-          {/* <img
-            className="w-60 translate-x-1/2 mt-20 mr-20 rounded-full border-8 border-[#D6D7C2]"
-            src={`https://ik.imagekit.io/pz8qfunss/Home/Padmakshi%20Jewellers%20-%20Product%20Photography.jpeg?updatedAt=1751285085823`}
-          /> */}
           <img
             className="w-60 object-cover mb-20  rounded-full border-8 border-[#D6D7C2]"
             src={`https://ik.imagekit.io/pz8qfunss/Home/jewel.jpeg?updatedAt=1751376778989`}
@@ -462,16 +492,10 @@ const Home = () => {
             <h1 className=" tracking-wider text-[65px] ">
               Jewelry is like <br /> the Perfect Spice
             </h1>
-            <p className="fredoka-font text-justify w-96">
-              it enhances and elevates without overpowering. Just as a pinch of
-              the right seasoning brings a dish to life, the right piece of
-              jewelry adds that finishing touch to any outfit, expressing
-              personality, style, and confidence. Whether it's a subtle shimmer
-              or a bold statement, jewelry has the power to transform the
-              ordinary into something unforgettable. It's the detail that
-              completes the look, making every moment feel a little more
-              special.
-            </p>
+            <TextGenerateEffect
+              words={words2}
+              className="fredoka-font text-justify w-3/4"
+            />
           </div>
           <div className="absolute flex justify-center items-center w-full opacity-50">
             <div className="flex flex-col items-center justify-center border-black border border-t-2 p-5 rounded-tr-[10vh] rounded-bl-[10vh] border-l-2 w-96 relative">
@@ -482,14 +506,10 @@ const Home = () => {
             </div>
           </div>
           <div className="w-1/2 p-20 flex flex-col gap-10 items-end">
-            <p className="fredoka-font text-justify w-96">
-              It doesn’t overshadow your natural beauty or your style, but
-              instead enhances it, adding just the right amount of sparkle and
-              personality. Whether it’s a delicate necklace, bold earrings, or a
-              classic bracelet, the right piece of jewelry brings balance and
-              elegance, completing your look effortlessly. It’s that subtle
-              detail that elevates the everyday into something extraordinary.
-            </p>
+            <TextGenerateEffect
+              words={words1}
+              className="fredoka-font text-justify w-3/4"
+            />
             <h1 className=" tracking-wider text-[65px] ">
               It complements what's
               <br /> already there !!!
