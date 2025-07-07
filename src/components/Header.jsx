@@ -128,14 +128,21 @@ const HamburgerMenu = ({ onClose }) => {
       transition={{ type: "spring", stiffness: 120 }}
       ref={modelRef}
       onClick={handleClickOutside}
-      className="fixed inset-0 flex h-screen z-50 backdrop-blur-3xl overflow-hidden"
+      className="fixed inset-0 flex h-screen w-screen z-50 backdrop-blur-3xl overflow-hidden snap-none"
     >
       <div className="flex flex-col w-full">
         <div className="h-248 flex justify-between p-6 gap-2">
-          <h1 className="text-3xl font-Caveat font-semibold">Menu</h1>
-          <button onClick={onClose}>
+          <h1 className="text-3xl font-Caveat font-semibold flex justify-between items-start w-full  ">
+            Menu{" "}
+            <span>
+              <button onClick={onClose}>
+                <MdCancel />
+              </button>
+            </span>
+          </h1>
+          {/* <button onClick={onClose}>
             <MdCancel />
-          </button>
+          </button> */}
         </div>
         <section className="menu-section flex flex-col">
           {navItems.map((item) => (
@@ -166,9 +173,9 @@ export function Header() {
       initial={{ y: -100, opacity: 1 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5, delay: 0.5 }}
-      className="relative w-full flex items-center justify-around z-50"
+      className="relative w-full flex items-center justify-around z-40"
     >
-      <div className="Hamburger lg:hidden flex fixed top-5 left-5  p-5">
+      <div className="Hamburger lg:hidden flex fixed top-5 left-5 backdrop-blur-3xl rounded-full  p-5">
         <button className="" onClick={() => setShowHamburger(true)}>
           <LuAlignLeft className="text-black lg:hidden text-xl" />
         </button>

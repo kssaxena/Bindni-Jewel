@@ -7,12 +7,12 @@ const Branding = () => {
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className="p-10  mt-10 flex flex-col justify-center items-center gap-5"
+      className="lg:p-10  mt-10 flex flex-col justify-center items-center gap-5"
     >
-      <h2 className="text-5xl cinzel-font w-full text-center underline underline-offset-4 ">
+      <h2 className="lg:text-5xl text-2xl cinzel-font w-full text-center underline underline-offset-4 ">
         How We Support Our Franchise Partners in Marketing & Branding
       </h2>
-      <p className="text-justify leading-relaxed text-base px-20 py-10">
+      <p className="text-justify leading-relaxed text-base lg:px-20 px-5 py-10">
         As a brand dealing in artificial jewellery, ethnic wear, handbags,
         handicraft items, and blankets, we understand the importance of
         consistent visibility and brand image. For all franchise partners, we
@@ -32,7 +32,7 @@ const Branding = () => {
         engagement across platforms.
       </p>
 
-      <p className=" text-justify leading-relaxed text-base px-20 pb-10 flex flex-col gap-5">
+      <p className=" text-justify leading-relaxed text-base lg:px-20 px-5 pb-10 flex flex-col gap-5">
         <li>
           At our core, we believe that the success of our franchise partners is
           the true success of our brand. As a company specializing in artificial

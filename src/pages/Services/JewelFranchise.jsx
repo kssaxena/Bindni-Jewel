@@ -39,18 +39,18 @@ const JewelFranchise = () => {
 
   return (
     <div className="py-10">
-      <h1 className="text-5xl cinzel-font w-full text-center underline underline-offset-4 ">
+      <h1 className="lg:text-5xl text-2xl cinzel-font w-full text-center underline underline-offset-4 ">
         Franchise for Artificial Jewelries{" "}
       </h1>
-      <div className="flex justify-evenly items-center">
-        <div className="terms_and_conditions  max-w-3xl w-full p-6 md:p-10 overflow-y-auto">
-          <h2 className="text-2xl md:text-3xl mb-6 text-gray-800">
+      <div className="flex justify-evenly items-center flex-col lg:flex-row">
+        <div className="terms_and_conditions w-full p-5 overflow-y-auto">
+          <h2 className="lg:text-2xl md:text-3xl mb-6 text-gray-800">
             <TextGenerateEffect
               words={"Terms & Conditions"}
               className="fredoka-font text-justify w-3/4"
             />
           </h2>
-          <p className="text-gray-600 mb-6 text-sm md:text-base leading-relaxed ">
+          <p className="text-gray-600 mb-6 text-sm lg:text-base leading-relaxed ">
             Please read the following terms and conditions carefully before
             entering into any business, transaction, or engagement with our
             company. These conditions are designed to protect both parties and
@@ -99,7 +99,7 @@ const JewelFranchise = () => {
               whileInView={{ opacity: 1, y: 0 }}
               initial={{ opacity: 0, y: -100 }}
               transition={{ duration: 1 }}
-              className="w-60 translate-x-1/2 mt-20 mr-20 rounded-full border-8 border-[#D6D7C2]"
+              className="lg:w-60 w-40 lg:translate-x-1/2 mt-20 lg:mr-20 rounded-full border-8 border-[#D6D7C2] object-cover"
               src="https://ik.imagekit.io/pz8qfunss/Home/Untitled%20design%20(1).mp4?updatedAt=1751376140133"
               autoPlay
               loop
@@ -107,7 +107,7 @@ const JewelFranchise = () => {
               playsInline
             />
             <img
-              className="w-60 object-cover mb-20  rounded-full border-8 border-[#D6D7C2]"
+              className="lg:w-60 w-40 object-cover mb-20  rounded-full border-8 border-[#D6D7C2]"
               src={`https://ik.imagekit.io/pz8qfunss/Home/jewel.jpeg?updatedAt=1751376778989`}
             />
           </div>
@@ -138,10 +138,7 @@ const JewelFranchise = () => {
             {/* <FaYoutube className="text-4xl bg-[#D6D7C2] p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" /> */}
             {/* <FaPinterest className="text-4xl bg-[#D6D7C2] p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" /> */}
           </div>
-          <Button
-            Label="Enquire for Jewel Franchise"
-            onClick={() => setIsOpen(true)}
-          />
+          <Button Label="Jewelry Franchise" onClick={() => setIsOpen(true)} />
         </div>
       </div>
       <AnimatePresence>
@@ -151,7 +148,7 @@ const JewelFranchise = () => {
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.1 }}
             transition={{ duration: 0.4, ease: "easeInOut" }}
-            className="fixed top-0 left-0 w-full h-screen flex justify-center items-center bg-[#D6D7C2] "
+            className="fixed top-0 left-0 w-full h-screen flex justify-center items-center bg-[#D6D7C2] z-50"
           >
             <form onSubmit={handleSubmit} className="w-1/4 flex flex-col gap-2">
               <div>
