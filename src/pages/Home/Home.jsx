@@ -118,7 +118,7 @@ const Home = () => {
         </div>
         <div className="w-1/2 flex flex-col gap-10">
           <h1 className=" tracking-wider text-[50px]">
-            Jewelry which fit everyone <br /> budget and taste !
+            Jewelry which fit Everyone's <br /> Budget and Taste !
           </h1>
           <p className="fredoka-font text-justify">
             Jewelry that fits every budget and taste is a rare gem in today's

@@ -9,7 +9,16 @@ import {
 import { cn } from "../lib/utils";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { FaFacebook, FaInstagram, FaWhatsapp, FaYoutube } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaPinterest,
+  FaWhatsapp,
+  FaYoutube,
+} from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
+import { IoCall } from "react-icons/io5";
+import { SiGmail } from "react-icons/si";
 import { productArray, ServiceArray } from "../Constants/Constants";
 
 function Navbar({ className }) {
@@ -110,11 +119,15 @@ export function Header() {
         src={`https://ik.imagekit.io/pz8qfunss/oie_FNGIcUJCB8uq.png?updatedAt=1751607165073`}
       />
       <Navbar className="top-2" />
-      <div className="flex justify-end items-center w-full gap-5 px-20 py-10">
-        <FaInstagram className="text-2xl " />
-        <FaWhatsapp className="text-2xl " />
-        <FaFacebook className="text-2xl " />
-        <FaYoutube className="text-2xl " />
+      <div className="flex justify-end items-center w-full gap-2 px-20 py-10">
+        <IoCall className="text-4xl bg-[#D6D7C2] p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" />
+        <FaInstagram className="text-4xl bg-[#D6D7C2] p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" />
+        <FaWhatsapp className="text-4xl  bg-[#D6D7C2] p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" />
+        <FaLocationDot className="text-4xl  bg-[#D6D7C2] p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" />
+        {/* <FaFacebook className="text-4xl bg-[#D6D7C2] p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" />
+        <FaYoutube className="text-4xl bg-[#D6D7C2] p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" />
+        <FaPinterest className="text-4xl bg-[#D6D7C2] p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" />
+        <SiGmail className="text-4xl bg-[#D6D7C2] p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" /> */}
       </div>
     </motion.div>
   );

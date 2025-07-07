@@ -38,10 +38,16 @@ export const productArray = [
   },
 ];
 export const ServiceArray = [
-  { name: "Artificial Jewelry Franchise", href: "/franchise-enquiry-jewelry" },
-  { name: "Ethnic Wears Franchise", href: "/franchise-enquiry-ethnic" },
-  { name: "Franchise for Both", href: "/franchise-enquiry-all" },
-  { name: "Branding", href: "/branding" },
+  {
+    name: "Artificial Jewelry Franchise",
+    href: "/services-franchise-enquiry-jewelry",
+  },
+  {
+    name: "Ethnic Wears Franchise",
+    href: "/services-franchise-enquiry-ethnic",
+  },
+  { name: "Franchise for Both", href: "/services-franchise-enquiry-all" },
+  { name: "Branding", href: "/services-branding" },
 ];
 
 //home

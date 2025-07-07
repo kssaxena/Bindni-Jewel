@@ -49,7 +49,7 @@ const Gallery = () => {
         <section>
           <h1 className="text-center w-full text-7xl caveat-font py-20 tracking-wider ">
             Welcome to our{" "}
-            <span className="underline underline-offset-8 decoration-dotted decoration-[#DB532F] drop-shadow-2xl">
+            <span className="shadow-b-2xl border-b-2">
               Gallery
             </span>
           </h1>
