@@ -23,43 +23,32 @@ const Home = () => {
   const handleCollectionPage = () => {
     window.location.href = "/all-collections";
   };
+  const handleGalleryPage = () => {
+    window.location.href = "/gallery";
+  };
 
   return (
     <div className=" cinzel-font h-fit">
-      <section className="landing-section flex flex-row items-center justify-evenly w-full h-screen">
+      <section className="landing-section flex lg:flex-row flex-col items-center lg:justify-evenly justify-center w-full h-screen">
         <div className="absolute h-full w-full select-none z-0 top-0 left-0">
           <motion.img
             initial={{ y: -100, opacity: 0 }}
-            animate={{ y: 0, opacity:0.3 }}
+            animate={{ y: 0, opacity: 0.3 }}
             transition={{ duration: 0.5, delay: 0.5 }}
             className="w-full h-full object-cover opacity-20"
             src={`https://ik.imagekit.io/pz8qfunss/Home/jwellery%20backgound.jpg?updatedAt=1751307138279`}
           />
         </div>
-        <div className="flex flex-row items-center justify-around w-full h-screen z-10">
-          <div className="flex flex-col items-center justify-around  h-3/4 ">
-            <h1 className=" tracking-wider text-[60px]">
+        <div className="flex lg:flex-row flex-col items-center lg:justify-around justify-center gap-10 lg:gap-0 w-full lg:h-screen z-10">
+          <div className="flex flex-col items-center justify-around h-fit  lg:h-3/4">
+            <h1 className=" tracking-wider lg:text-[60px] text-2xl">
               Happiness of <br /> women
-              {/* <span className="typewriter-text inline-block">
-                Happiness of <br /> women
-              </span> */}
-              {/* <span>
-                <Typewriter
-                  words={["Happiness of women"]}
-                  loop={1}
-                  cursor
-                  cursorStyle="_"
-                  typeSpeed={70}
-                  deleteSpeed={50}
-                  delaySpeed={1000}
-                />
-              </span> */}
             </h1>
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -100 }}
               transition={{ duration: 1 }}
-              className="flex flex-col items-center justify-center border-black border border-t-2 p-5 rounded-tr-[10vh] rounded-bl-[10vh] border-l-2"
+              className="hidden lg:flex flex-col items-center justify-center border-black border border-t-2 p-5 rounded-tr-[10vh] rounded-bl-[10vh] border-l-2"
             >
               <motion.img
                 whileInView={{ opacity: 1, x: 0 }}
@@ -70,19 +59,19 @@ const Home = () => {
               />
             </motion.div>
           </div>
-          <div className="flex flex-col items-center justify-center  h-3/4 gap-20 pb-20">
+          <div className="flex flex-col items-center justify-center  lg:h-3/4 lg:gap-20 lg:pb-20">
             <div className="border-black border-r border-t-2 p-5 rounded-tr-[10vh]">
               <motion.img
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.5 }}
-                className="w-96 rounded-tr-[10vh] rounded-bl-[10vh] drop-shadow-2xl shadow-[#FEF9E9]"
+                className="lg:w-96 w-40 rounded-tr-[10vh] rounded-bl-[10vh] drop-shadow-2xl shadow-[#FEF9E9]"
                 src={`https://ik.imagekit.io/pz8qfunss/Home/Padmakshi%20Jewellers%20-%20Product%20Photography.jpeg?updatedAt=1751285085823`}
               />
             </div>
             <Button Label={"Explore More"} onClick={handleCollectionPage} />
           </div>
-          <div className="flex flex-col items-center justify-around  h-3/4 ">
+          <div className="hidden lg:flex flex-col items-center justify-around  h-3/4 ">
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: 100 }}
@@ -101,10 +90,10 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="praise flex justify-around items-center py-20">
-        <div className="flex flex-row">
+      <section className="praise flex flex-col lg:flex-row lg:justify-around justify-center items-center lg:py-20 py">
+        <div className="flex flex-row justify-center items-center">
           <video
-            className="w-60 translate-x-1/2 mt-20 mr-20 rounded-full border-8 border-[#D6D7C2]"
+            className="lg:w-60 w-40 lg:translate-x-1/2 mt-20 lg:mr-20 rounded-full border-8 border-[#D6D7C2] object-cover"
             src="https://ik.imagekit.io/pz8qfunss/Home/Untitled%20design%20(1).mp4?updatedAt=1751376140133"
             autoPlay
             loop
@@ -112,12 +101,12 @@ const Home = () => {
             playsInline
           />
           <img
-            className="w-60 object-cover mb-20  rounded-full border-8 border-[#D6D7C2]"
+            className="lg:w-60 w-40 object-cover mb-20  rounded-full border-8 border-[#D6D7C2]"
             src={`https://ik.imagekit.io/pz8qfunss/Home/jewel.jpeg?updatedAt=1751376778989`}
           />
         </div>
-        <div className="w-1/2 flex flex-col gap-10">
-          <h1 className=" tracking-wider text-[50px]">
+        <div className="lg:w-1/2 flex flex-col lg:gap-10 gap-5 p-5 lg:p-0">
+          <h1 className=" tracking-wider lg:text-[50px] text-2xl text-center">
             Jewelry which fit Everyone's <br /> Budget and Taste !
           </h1>
           <p className="fredoka-font text-justify">
@@ -135,8 +124,11 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="company_collection flex py-20 ">
-        <aside className="w-1/4">
+      <section className="company_collection hidden lg:flex flex-col lg:flex-row lg:py-20 border-t lg:border-0 lg:m-0 m-5">
+        <h1 className="lg:hidden flex justify-center items-center text-2xl text-center w-full bg-red-400">
+          Our Collections
+        </h1>
+        <aside className="lg:w-1/4">
           <nav>
             <ul className="flex flex-col gap-10 items-end">
               <li
@@ -490,31 +482,34 @@ const Home = () => {
           ))}
         </main>
       </section>
-      <section className="flex flex-col pt-40  select-none pb-10">
-        <div className="flex">
-          <div className="w-1/2 p-20 flex flex-col gap-10">
-            <h1 className=" tracking-wider text-[65px] ">
+      <section className="flex flex-col lg:pt-40 border-t lg:border-0 m-5 lg:gap-0 gap-10 select-none pb-10">
+        <div className="flex flex-col lg:flex-row">
+          <div className="lg:w-1/2 lg:p-20 flex flex-col gap-10 pt-10 lg:pt-0">
+            <h1 className="hidden lg:flex tracking-wider lg:text-[65px] text-center">
               Jewelry is like <br /> the Perfect Spice
+            </h1>
+            <h1 className="lg:hidden flex tracking-wider text-2xl ">
+              Jewelry is like the Perfect Spice
             </h1>
             <TextGenerateEffect
               words={words2}
-              className="fredoka-font text-justify w-3/4"
+              className="fredoka-font text-justify lg:w-3/4"
             />
           </div>
-          <div className="absolute flex justify-center items-center w-full opacity-50">
-            <div className="flex flex-col items-center justify-center border-black border border-t-2 p-5 rounded-tr-[10vh] rounded-bl-[10vh] border-l-2 w-96 relative">
+          <div className="lg:absolute flex justify-center items-center w-full opacity-50 mt-10 lg:mt-0">
+            <div className="flex flex-col items-center justify-center border-black border border-t-2 p-5 rounded-tr-[10vh] rounded-bl-[10vh] border-l-2 lg:w-96 relative w-60">
               <img
-                className="scale-125  w-60 rounded-tr-[10vh] rounded-bl-[10vh] drop-shadow-2xl shadow-[#FEF9E9] "
+                className="scale-125  lg:w-60 w-40 rounded-tr-[10vh] rounded-bl-[10vh] drop-shadow-2xl shadow-[#FEF9E9] "
                 src={`https://ik.imagekit.io/pz8qfunss/Home/ring.jpeg?updatedAt=1751285826577`}
               />
             </div>
           </div>
-          <div className="w-1/2 p-20 flex flex-col gap-10 items-end">
+          <div className="lg:w-1/2 lg:p-20 pt-10 flex lg:flex-col lg:gap-10 items-end flex-col-reverse">
             <TextGenerateEffect
               words={words1}
-              className="fredoka-font text-justify w-3/4"
+              className="fredoka-font text-justify lg:w-3/4"
             />
-            <h1 className=" tracking-wider text-[65px] ">
+            <h1 className=" tracking-wider lg:text-[65px] text-2xl  w-full py-10 text-center">
               It complements what's
               <br /> already there !!!
             </h1>
@@ -524,7 +519,7 @@ const Home = () => {
           <Button
             Label="Explore More"
             className={"w-fit"}
-            onClick={handleCollectionPage}
+            onClick={handleGalleryPage}
           />
         </div>
       </section>

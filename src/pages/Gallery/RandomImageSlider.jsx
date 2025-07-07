@@ -45,7 +45,7 @@ const RandomImageSlider = ({ images }) => {
 
   return (
     <div
-      className="relative w-full max-w-3xl mx-auto h-[400px] overflow-hidden rounded-xl shadow-lg"
+      className="relative w-full max-w-3xl mx-auto lg:h-[400px] h-[200px] overflow-hidden rounded-xl shadow-lg"
       onMouseEnter={() => {
         setIsHovered(true);
         stopSlider();

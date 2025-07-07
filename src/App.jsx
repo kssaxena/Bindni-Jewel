@@ -17,7 +17,7 @@ import Branding from "./pages/Services/Branding";
 
 function App() {
   return (
-    <div className="bg-[#D6D7C2] fredoka-font ">
+    <div className="bg-[#D6D7C2] fredoka-font w-full ">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
