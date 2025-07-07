@@ -48,7 +48,10 @@ const Gallery = () => {
         </section>
         <section>
           <h1 className="text-center w-full text-7xl caveat-font py-20 tracking-wider ">
-            Welcome to our Gallery
+            Welcome to our{" "}
+            <span className="underline underline-offset-8 decoration-dotted decoration-[#DB532F] drop-shadow-2xl">
+              Gallery
+            </span>
           </h1>
           <div className="flex flex-wrap flex-row justify-center items-center gap-4 my-8 ">
             {shuffledImages.map((items, idx) => (

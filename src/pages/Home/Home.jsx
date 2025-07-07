@@ -28,7 +28,10 @@ const Home = () => {
     <div className=" cinzel-font h-fit">
       <section className="landing-section flex flex-row items-center justify-evenly w-full h-screen">
         <div className="absolute h-full w-full select-none z-0 top-0 left-0">
-          <img
+          <motion.img
+            initial={{ y: -100, opacity: 0 }}
+            animate={{ y: 0, opacity:0.3 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
             className="w-full h-full object-cover opacity-20"
             src={`https://ik.imagekit.io/pz8qfunss/Home/jwellery%20backgound.jpg?updatedAt=1751307138279`}
           />
@@ -70,7 +73,7 @@ const Home = () => {
           <div className="flex flex-col items-center justify-center  h-3/4 gap-20 pb-20">
             <div className="border-black border-r border-t-2 p-5 rounded-tr-[10vh]">
               <motion.img
-                initial={{ y: -100, opacity: 0 }}
+                initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.5 }}
                 className="w-96 rounded-tr-[10vh] rounded-bl-[10vh] drop-shadow-2xl shadow-[#FEF9E9]"
