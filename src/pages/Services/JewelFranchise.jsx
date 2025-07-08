@@ -43,7 +43,8 @@ const JewelFranchise = () => {
         Franchise for Artificial Jewelries{" "}
       </h1>
       <div className="flex justify-evenly items-center flex-col lg:flex-row">
-        <div className="terms_and_conditions w-full p-5 overflow-y-auto">
+        <div className="terms_and_conditions  max-w-3xl w-full p-6 md:p-10 overflow-y-auto">
+          {" "}
           <h2 className="lg:text-2xl md:text-3xl mb-6 text-gray-800">
             <TextGenerateEffect
               words={"Terms & Conditions"}

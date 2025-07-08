@@ -16,7 +16,7 @@ const Collection = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const sections = [
-    "Necklaces",
+    "Jewellry",
     "Lehengas",
     "Sarees",
     "Handmade Bags",
@@ -105,13 +105,13 @@ const Collection = () => {
           {sections.map((section) => (
             <div
               key={section}
-              className={`absolute transition-opacity duration-500 ease-in-out w-full lg:mt-10 px-4 md:px-40 h-3/4 overflow-y-scroll no-scrollbar ${
+              className={`absolute transition-opacity duration-500 ease-in-out w-full lg:mt-10 px-4 md:px-40 lg:h-3/4 h-[90%] overflow-y-scroll no-scrollbar ${
                 activeSection === section
                   ? "opacity-100"
                   : "opacity-0 pointer-events-none"
               }`}
             >
-              {section === "Necklaces" && <NecklaceCollection />}
+              {section === "Jewellry" && <NecklaceCollection />}
               {section === "Lehengas" && <LehengasCollection />}
               {section === "Sarees" && <SareesCollection />}
               {section === "Handmade Bags" && <HandBagCollection />}

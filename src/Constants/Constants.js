@@ -322,6 +322,59 @@ export const handBagCollection = [
   },
 ];
 
+export const handCraftCollection = [
+  {
+    id: 1,
+    name: "Craft 1",
+    url: "https://ik.imagekit.io/pz8qfunss/Products/Handicrafts/Kedarnath%20Temple.jpeg?updatedAt=1751968759048",
+  },
+  {
+    id: 2,
+    name: "Craft 2",
+    url: "https://ik.imagekit.io/pz8qfunss/Products/Handicrafts/_.jpeg?updatedAt=1751968759044",
+  },
+  {
+    id: 3,
+    name: "Craft 3",
+    url: "https://ik.imagekit.io/pz8qfunss/Products/Handicrafts/Vikram%20Varma%20(Bunty)%20on%20Instagram_%20_Interiors%20by%20@studiopurpleelephant%20@monica_reddy%20__Photography%20&%20Reels%20@redotphotography%20___interiores%20_interi%C3%B8r%20_hellohyderabad%20_hyderabadi%20_hyderbad%20_hyderabad_diaries%20_whatsuphyderabad%20_hope%20_delhi%20_.jpeg?updatedAt=1751968758932",
+  },
+  {
+    id: 4,
+    name: "Craft 1",
+    url: "https://ik.imagekit.io/pz8qfunss/Products/Handicrafts/_%20(2).jpeg?updatedAt=1751968758899",
+  },
+  {
+    id: 5,
+    name: "Craft 1",
+    url: "https://ik.imagekit.io/pz8qfunss/Products/Handicrafts/_%20(1).jpeg?updatedAt=1751968758709",
+  },
+  {
+    id: 6,
+    name: "Craft 1",
+    url: "https://ik.imagekit.io/pz8qfunss/Products/Handicrafts/Thermocouple%20temple%20ideas.jpeg?updatedAt=1751968758769",
+  },
+  {
+    id: 7,
+    name: "Craft 1",
+    url: "https://ik.imagekit.io/pz8qfunss/Products/Handicrafts/miniature%20aesthetic%20house.jpeg?updatedAt=1751968758410",
+  },
+  {
+    id: 8,
+    name: "Craft 1",
+    url: "https://ik.imagekit.io/pz8qfunss/Products/Handicrafts/_%20(3).jpeg?updatedAt=1751968758400",
+  },
+  {
+    id: 9,
+    name: "Craft 1",
+    url: "https://ik.imagekit.io/pz8qfunss/Products/Handicrafts/@miniatureit%20_%20Milkshake%20Website%20Builder.jpeg?updatedAt=1751968758392",
+  },
+  // {
+  //   id: 10,
+  //   name: "Craft 1",
+  //   url: "https://ik.imagekit.io/pz8qfunss/Products/Crafts/velvet.jpeg?updatedAt=1751728084260",
+  // },
+];
+
 // gallery
 export const galleryBannerImages = [
   "https://ik.imagekit.io/pz8qfunss/Gallery/Gallery_Banner/create%20an%20image%20with%20a%20tag%20_New%20Arrivals_%20with%20adding%20indian%20traditional%20handbags%20in%20the%20background%20write%20the%20text%20on%20the%20left%20side%20of%20the%20image%20and%20make%20it%20look%20asthetic.jpg?updatedAt=1751825753772",

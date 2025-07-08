@@ -14,9 +14,18 @@ const LehengasCollection = () => {
       },
     }),
   };
+  function shuffleArray(array) {
+        const arr = [...array];
+        for (let i = arr.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [arr[i], arr[j]] = [arr[j], arr[i]];
+        }
+        return arr;
+      }
+      const shuffledImages = shuffleArray(lehengaCollection);
   return (
     <div className="flex flex-wrap justify-center items-center gap-20 my-20 ">
-      {lehengaCollection.map((item) => (
+      {shuffledImages.map((item) => (
         <motion.div
           variants={zoomVariant}
           initial="hidden"

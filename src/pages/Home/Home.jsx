@@ -6,7 +6,7 @@ import { TextGenerateEffect } from "../../components/ui/text-generate-effect";
 import { words1, words2 } from "../../Constants/Constants";
 
 const Home = () => {
-  const [activeSection, setActiveSection] = useState("Necklaces");
+  const [activeSection, setActiveSection] = useState("Sarees");
   const zoomVariant = {
     hidden: { scale: 0.8, opacity: 1 / 2 },
     visible: (i) => ({
@@ -29,7 +29,7 @@ const Home = () => {
 
   return (
     <div className=" cinzel-font h-fit">
-      <section className="landing-section flex lg:flex-row flex-col items-center lg:justify-evenly justify-center w-full h-screen">
+      <section className="landing-section flex lg:flex-row flex-col items-center lg:justify-evenly justify-start w-full h-screen ">
         <div className="absolute h-full w-full select-none z-0 top-0 left-0">
           <motion.img
             initial={{ y: -100, opacity: 0 }}
@@ -65,11 +65,14 @@ const Home = () => {
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.5 }}
-                className="lg:w-96 w-40 rounded-tr-[10vh] rounded-bl-[10vh] drop-shadow-2xl shadow-[#FEF9E9]"
+                className="lg:w-96 w-52 rounded-tr-[10vh] rounded-bl-[10vh] drop-shadow-2xl shadow-[#FEF9E9]"
                 src={`https://ik.imagekit.io/pz8qfunss/Home/Padmakshi%20Jewellers%20-%20Product%20Photography.jpeg?updatedAt=1751285085823`}
               />
             </div>
-            <Button Label={"Explore More"} onClick={handleCollectionPage} />
+            <Button
+              Label={"Explore Collections"}
+              onClick={handleCollectionPage}
+            />
           </div>
           <div className="hidden lg:flex flex-col items-center justify-around  h-3/4 ">
             <motion.div
@@ -90,7 +93,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="praise flex flex-col lg:flex-row lg:justify-around justify-center items-center lg:py-20 py">
+      <section className="praise flex flex-col lg:flex-row lg:justify-around justify-center items-center lg:py-20 py ">
         <div className="flex flex-row justify-center items-center">
           <video
             className="lg:w-60 w-40 lg:translate-x-1/2 mt-20 lg:mr-20 rounded-full border-8 border-[#D6D7C2] object-cover"
@@ -124,7 +127,74 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="company_collection hidden lg:flex flex-col lg:flex-row lg:py-20 border-t lg:border-0 lg:m-0 m-5">
+      <section className="landing-section flex lg:flex-row flex-col items-center lg:justify-evenly justify-center w-full h-screen ">
+        <div className="absolute h-full w-full select-none z-0 ">
+          <motion.img
+            initial={{ y: -100, opacity: 0 }}
+            animate={{ y: 0, opacity: 0.3 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+            className="w-full h-full object-cover opacity-20"
+            src={`https://ik.imagekit.io/pz8qfunss/Home/generate%20an%20image%20,which%20should%20include%20indian%20handbags,%20handicrafts,%20blankets%20all%20in%20one.jpg?updatedAt=1751958776805`}
+          />
+        </div>
+        <div className="flex lg:flex-row flex-col lg:items-center lg:justify-around justify-center gap-10 lg:gap-0 w-full lg:h-screen z-10 ">
+          <div className="flex flex-col items-center justify-around h-fit  lg:h-3/4">
+            <h1 className=" tracking-wider lg:text-[60px] text-2xl text-center lg:text-left">
+              Empowering <br /> Her Smile{" "}
+              <span className="flex lg:hidden">Featuring with Ethnics</span>
+            </h1>
+            <motion.div
+              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, x: -100 }}
+              transition={{ duration: 1 }}
+              className="hidden lg:flex flex-col items-center justify-center border-black border border-t-2 p-5 rounded-tr-[10vh] rounded-bl-[10vh] border-l-2"
+            >
+              <motion.img
+                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, x: 100 }}
+                transition={{ duration: 1 }}
+                className="w-60 rounded-tr-[10vh] rounded-bl-[10vh] drop-shadow-2xl shadow-[#FEF9E9] "
+                src={`https://ik.imagekit.io/pz8qfunss/Products/lahanga/_%20(1).jpeg?updatedAt=1751705822049`}
+              />
+            </motion.div>
+          </div>
+          <div className="flex flex-col items-center justify-center lg:h-3/4  lg:pt-20">
+            <div className="border-black border-l border-b-2 p-5 rounded-bl-[10vh]">
+              <motion.img
+                initial={{ y: 100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
+                className="lg:w-96 w-52 rounded-tr-[10vh] rounded-bl-[10vh] drop-shadow-2xl shadow-[#FEF9E9]"
+                src={`https://ik.imagekit.io/pz8qfunss/Home/Tejaswini%20Gowda.jpeg?updatedAt=1751957848184`}
+              />
+            </div>
+            <Button
+              Label={"Explore Collection"}
+              onClick={handleCollectionPage}
+            />
+          </div>
+          <div className="hidden lg:flex flex-col items-center justify-around  h-3/4 ">
+            <motion.div
+              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, x: 100 }}
+              transition={{ duration: 1 }}
+              className="border-black border-l-3 border-b p-5 rounded-bl-[10vh] "
+            >
+              <motion.img
+                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, x: -100 }}
+                transition={{ duration: 1 }}
+                className="w-60 rounded-tr-[10vh] rounded-bl-[10vh] drop-shadow-2xl shadow-[#FEF9E9] "
+                src={`https://ik.imagekit.io/pz8qfunss/Products/bags/Mulmul%20Manjari%20White%20Potli%20Bag.jpeg?updatedAt=1751728084204`}
+              />
+            </motion.div>
+            <h1 className="text-[60px] tracking-wide">
+              Trendy <br /> Ethnic Wears
+            </h1>
+          </div>
+        </div>
+      </section>
+      <section className="company_collection hidden lg:flex flex-col lg:flex-row lg:py-20 border-t lg:border-0 lg:m-0 m-5 ">
         <h1 className="lg:hidden flex justify-center items-center text-2xl text-center w-full bg-red-400">
           Our Collections
         </h1>
@@ -402,7 +472,8 @@ const Home = () => {
                         <video
                           // className="w-60 h-full object-cover bg-red-400"
                           className="w-72 rounded-tr-[10vh] rounded-bl-[10vh]  object-cover  p-5 border-l-2 border-b"
-                          src="https://ik.imagekit.io/pz8qfunss/Home/Untitled%20design%20(8).mp4?updatedAt=1751397479644" // replace with your video URL
+                          src="https://ik.imagekit.io/jarvisai/A%20beautiful%20Facade%20with%20a%20blue%20door%20and%20flowers.mp4?updatedAt=1751970923567"
+                          // video limit has expired from the bindni gmail login, so i am using kshitiijsaxena919 for this video
                           autoPlay
                           loop
                           muted
@@ -419,7 +490,8 @@ const Home = () => {
                           initial={{ opacity: 0, x: -100 }}
                           transition={{ duration: 1 }}
                           className="w-72 rounded-tr-[10vh] rounded-bl-[10vh] object-cover  p-5 border-t border-r-2"
-                          src="https://ik.imagekit.io/pz8qfunss/Home/Untitled%20design%20(7).mp4?updatedAt=1751397363519" // replace with your video URL
+                          src="https://ik.imagekit.io/jarvisai/mtopen_3c156d2d90d5458e88c3fc9006ba4386_MTc1MTk2ODgwMA==_1ac8c4bd-f415-4bb8-4dd8-d0240392ef25.mp4?updatedAt=1751971905447"
+                          // video limit has expired from the bindni gmail login, so i am using kshitiijsaxena919 imagekit.io for this video
                           autoPlay
                           loop
                           muted
@@ -482,10 +554,10 @@ const Home = () => {
           ))}
         </main>
       </section>
-      <section className="flex flex-col lg:pt-40 border-t lg:border-0 m-5 lg:gap-0 gap-10 select-none pb-10">
-        <div className="flex flex-col lg:flex-row">
-          <div className="lg:w-1/2 lg:p-20 flex flex-col gap-10 pt-10 lg:pt-0">
-            <h1 className="hidden lg:flex tracking-wider lg:text-[65px] text-center">
+      <section className="flex flex-col lg:pt-40 border-t lg:border-0 m-5 lg:gap-0 gap-10 select-none pb-10 ">
+        <div className="flex flex-col lg:flex-row justify-center items-center gap-10">
+          <div className="lg:w-1/2 lg:p-20 flex flex-col gap-10 pt-10 lg:pt-0 ">
+            <h1 className="hidden lg:flex tracking-wider lg:text-[65px] lg:text-right lg:justify-end text-center">
               Jewelry is like <br /> the Perfect Spice
             </h1>
             <h1 className="lg:hidden flex tracking-wider text-2xl ">
@@ -493,31 +565,31 @@ const Home = () => {
             </h1>
             <TextGenerateEffect
               words={words2}
-              className="fredoka-font text-justify lg:w-3/4"
+              className="fredoka-font text-justify lg:w-3/4 indent-8"
             />
           </div>
-          <div className="lg:absolute flex justify-center items-center w-full opacity-50 mt-10 lg:mt-0">
+          <div className="lg:absolute flex justify-center items-center opacity-50 mt-10 lg:mt-0">
             <div className="flex flex-col items-center justify-center border-black border border-t-2 p-5 rounded-tr-[10vh] rounded-bl-[10vh] border-l-2 lg:w-96 relative w-60">
               <img
                 className="scale-125  lg:w-60 w-40 rounded-tr-[10vh] rounded-bl-[10vh] drop-shadow-2xl shadow-[#FEF9E9] "
-                src={`https://ik.imagekit.io/pz8qfunss/Home/ring.jpeg?updatedAt=1751285826577`}
+                src={`https://ik.imagekit.io/pz8qfunss/Home/South%20Indian%20Bride.jpeg?updatedAt=1751973058266`}
               />
             </div>
           </div>
-          <div className="lg:w-1/2 lg:p-20 pt-10 flex lg:flex-col lg:gap-10 items-end flex-col-reverse">
+          <div className="lg:w-1/2 lg:p-20 pt-10 flex lg:flex-col lg:gap-10 items-end flex-col-reverse ">
             <TextGenerateEffect
               words={words1}
-              className="fredoka-font text-justify lg:w-3/4"
+              className="fredoka-font text-justify lg:w-3/4 indent-8"
             />
             <h1 className=" tracking-wider lg:text-[65px] text-2xl  w-full py-10 text-center">
-              It complements what's
-              <br /> already there !!!
+              It complements with
+              <br /> other ingredients !!!
             </h1>
           </div>
         </div>
-        <div className="w-full flex justify-center items-center ">
+        <div className="w-full flex justify-center items-center">
           <Button
-            Label="Explore More"
+            Label="Explore Gallery"
             className={"w-fit"}
             onClick={handleGalleryPage}
           />

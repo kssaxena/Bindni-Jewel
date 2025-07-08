@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { necklaceCollection } from "../../Constants/Constants";
+import { handCraftCollection } from "../../Constants/Constants";
 const HandiCraftCollection = () => {
   const zoomVariant = {
     hidden: { scale: 0.8, opacity: 1 / 2 },
@@ -14,9 +14,18 @@ const HandiCraftCollection = () => {
       },
     }),
   };
+  function shuffleArray(array) {
+    const arr = [...array];
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  }
+  const shuffledImages = shuffleArray(handCraftCollection);
   return (
     <div className="flex flex-wrap justify-center items-center gap-20 my-20 ">
-      {necklaceCollection.map((item) => (
+      {shuffledImages.map((item) => (
         <motion.div
           variants={zoomVariant}
           initial="hidden"
