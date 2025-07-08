@@ -185,14 +185,33 @@ export function Header() {
       </div>
       <Navbar className="top-2 hidden lg:flex fixed" />
       <div className="justify-center items-center gap-2 py-10 hidden lg:flex ">
-        <IoCall className="text-4xl bg-[#D6D7C2] p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" />
-        <FaInstagram className="text-4xl bg-[#D6D7C2] p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" />
-        <FaWhatsapp className="text-4xl  bg-[#D6D7C2] p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" />
-        <FaLocationDot className="text-4xl  bg-[#D6D7C2] p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" />
-        {/* <FaFacebook className="text-4xl bg-[#D6D7C2] p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" />
-        <FaYoutube className="text-4xl bg-[#D6D7C2] p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" />
-        <FaPinterest className="text-4xl bg-[#D6D7C2] p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" />
-        <SiGmail className="text-4xl bg-[#D6D7C2] p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" /> */}
+        <a href="tel:+917489535194" target="_blank" rel="noopener noreferrer">
+          <IoCall className="text-2xl lg:text-4xl bg-[#D6D7C2] p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" />
+        </a>
+
+        <a
+          href="https://www.instagram.com/bindinijewel/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaInstagram className="text-2xl lg:text-4xl bg-[#D6D7C2] p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" />
+        </a>
+
+        <a
+          href="https://wa.me/917489535194"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaWhatsapp className="text-2xl lg:text-4xl bg-[#D6D7C2] p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" />
+        </a>
+        <a
+          href="https://maps.app.goo.gl/CZJRh2oK7hAxGvdj7"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaLocationDot className="text-2xl lg:text-4xl bg-[#D6D7C2] p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" />
+        </a>
+        
       </div>
       {showHamburger && (
         <HamburgerMenu onClose={() => setShowHamburger(false)} />

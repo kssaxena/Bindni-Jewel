@@ -80,11 +80,9 @@ export default function EnquiryForm() {
             className="w-full px-4 py-2 border rounded-lg focus:outline-none"
           >
             <option value="">Select an option</option>
-            <option value="Kiosk - Mall of Jaipur">
-              Kiosk – Mall of Jaipur
-            </option>
-            <option value="Retail Store - Jewelry Only">
-              Retail Store – Jewelry Only
+            <option value="Kiosk">Kiosk</option>
+            <option value="Retail Store Jewel or Ethnic">
+              Retail Store Jewel or Ethnic
             </option>
             <option value="Retail Store - Jewelry + Ethnic Wear">
               Retail Store – Jewelry + Ethnic Wear

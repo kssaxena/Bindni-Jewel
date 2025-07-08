@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 const Branding = () => {
+  const [showTerms, setShowTerms] = useState(false);
   return (
     <motion.div
       initial={{ opacity: 0, y: 40 }}
@@ -12,7 +13,7 @@ const Branding = () => {
       <h2 className="lg:text-5xl text-2xl cinzel-font w-full text-center underline underline-offset-4 ">
         How We Support Our Franchise Partners in Marketing & Branding
       </h2>
-      <p className="text-justify leading-relaxed text-base lg:px-20 px-5 py-10">
+      <p className="indent-8 text-justify leading-relaxed text-base lg:px-20 px-5 lg:py-10">
         As a brand dealing in artificial jewellery, ethnic wear, handbags,
         handicraft items, and blankets, we understand the importance of
         consistent visibility and brand image. For all franchise partners, we
@@ -31,8 +32,19 @@ const Branding = () => {
         sales while we build brand recall, generate footfall, and drive customer
         engagement across platforms.
       </p>
+      <button
+        className=" underline mb-4"
+        onClick={() => setShowTerms((prev) => !prev)}
+        aria-expanded={showTerms}
+      >
+        {showTerms ? "Read Less" : "Read More"}
+      </button>
 
-      <p className=" text-justify leading-relaxed text-base lg:px-20 px-5 pb-10 flex flex-col gap-5">
+      <p
+        className={` text-justify leading-relaxed text-base lg:px-20 px-5 pb-10 flex flex-col gap-5 ${
+          showTerms ? "block" : "hidden"
+        }`}
+      >
         <li>
           At our core, we believe that the success of our franchise partners is
           the true success of our brand. As a company specializing in artificial

@@ -16,6 +16,7 @@ import { motion } from "framer-motion";
 
 const JewelFranchise = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [showTerms, setShowTerms] = useState(false);
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -45,7 +46,7 @@ const JewelFranchise = () => {
       <div className="flex justify-evenly items-center flex-col lg:flex-row">
         <div className="terms_and_conditions  max-w-3xl w-full p-6 md:p-10 overflow-y-auto">
           {" "}
-          <h2 className="lg:text-2xl md:text-3xl mb-6 text-gray-800">
+          <h2 className="lg:text-2xl md:text-3xl lg:mb-6 text-gray-800">
             <TextGenerateEffect
               words={"Terms & Conditions"}
               className="fredoka-font text-justify w-3/4"
@@ -59,42 +60,61 @@ const JewelFranchise = () => {
             you agree to abide by all clauses mentioned below, and acknowledge
             that these terms may be updated periodically.
           </p>
-          <ul className="list-disc pl-6 space-y-4 text-gray-700 text-sm md:text-base overflow-y-auto pr-2">
-            <li>
-              All customers must provide valid identification if requested.
-            </li>
-            <li>
-              The product once sold can only be exchanged within 7 working days
-              with a receipt.
-            </li>
-            <li>
-              Refunds are not applicable on discounted or promotional items.
-            </li>
-            <li>
-              All deposits are non-refundable and must be used within the agreed
-              timeline.
-            </li>
-            <li>
-              Inventory will be provided as per the agreement signed at the time
-              of onboarding.
-            </li>
-            <li>Any damage during transit must be reported within 24 hours.</li>
-            <li>
-              The company reserves the right to update the terms without prior
-              notice.
-            </li>
-            <li>All disputes are subject to Jaipur jurisdiction.</li>
-            <li>
-              Parties must maintain confidentiality of pricing and commercial
-              terms.
-            </li>
-            <li>
-              Any misuse of branding or material may lead to termination of
-              agreement.
-            </li>
-          </ul>
+          <button
+            className=" underline mb-4"
+            onClick={() => setShowTerms((prev) => !prev)}
+            aria-expanded={showTerms}
+          >
+            {showTerms ? "Read Less" : "Read More"}
+          </button>
+          <AnimatePresence>
+            <motion.ul
+              initial={{ opacity: 0, scale: 0.1 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.1 }}
+              transition={{ duration: 0.4, ease: "easeInOut" }}
+              className={`list-disc pl-6 space-y-4 text-gray-700 text-sm md:text-base overflow-y-auto pr-2 transition-all duration-300 ${
+                showTerms ? "block" : "hidden"
+              }`}
+            >
+              <li>
+                All customers must provide valid identification if requested.
+              </li>
+              <li>
+                The product once sold can only be exchanged within 7 working
+                days with a receipt.
+              </li>
+              <li>
+                Refunds are not applicable on discounted or promotional items.
+              </li>
+              <li>
+                All deposits are non-refundable and must be used within the
+                agreed timeline.
+              </li>
+              <li>
+                Inventory will be provided as per the agreement signed at the
+                time of onboarding.
+              </li>
+              <li>
+                Any damage during transit must be reported within 24 hours.
+              </li>
+              <li>
+                The company reserves the right to update the terms without prior
+                notice.
+              </li>
+              <li>All disputes are subject to Jaipur jurisdiction.</li>
+              <li>
+                Parties must maintain confidentiality of pricing and commercial
+                terms.
+              </li>
+              <li>
+                Any misuse of branding or material may lead to termination of
+                agreement.
+              </li>
+            </motion.ul>
+          </AnimatePresence>
         </div>
-        <div className="flex flex-col items-center justify-center gap-10">
+        <div className="flex lg:flex-col flex-col-reverse items-center justify-center gap-10 border-b lg:border-0">
           <div className="flex flex-row">
             <motion.video
               whileInView={{ opacity: 1, y: 0 }}
@@ -113,33 +133,49 @@ const JewelFranchise = () => {
             />
           </div>
           <div className="flex justify-center items-center w-full gap-2">
-            <a href="tel:+917489535194">
-              <IoCall className="text-4xl bg-[#D6D7C2] p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" />
-            </a>
-            <a href="https://wa.me/917489535194" target="_blank">
-              {" "}
-              <FaWhatsapp className="text-4xl  bg-[#D6D7C2] p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" />
-            </a>
-            <a href="#" target="_blank">
-              {" "}
-              <FaLocationDot className="text-4xl  bg-[#D6D7C2] p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" />
-            </a>
-            <a href="https://www.instagram.com/bindinijewel/" target="_blank">
-              <FaInstagram className="text-4xl bg-[#D6D7C2] p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" />
-            </a>
             <a
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=bindnijewel@gmail.com.com&su=Enquiry%20for%20Artificical%20Jewel%20Franchise&body="
+              href="tel:+917489535194"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <SiGmail className="text-4xl bg-[#D6D7C2] p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" />
+              <IoCall className="text-2xl lg:text-4xl bg-[#D6D7C2] p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" />
             </a>
 
-            {/* <FaFacebook className="text-4xl bg-[#D6D7C2] p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" /> */}
-            {/* <FaYoutube className="text-4xl bg-[#D6D7C2] p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" /> */}
-            {/* <FaPinterest className="text-4xl bg-[#D6D7C2] p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" /> */}
+            <a
+              href="https://wa.me/917489535194"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaWhatsapp className="text-2xl lg:text-4xl bg-[#D6D7C2] p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" />
+            </a>
+            <a
+              href="https://maps.app.goo.gl/CZJRh2oK7hAxGvdj7"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLocationDot className="text-2xl lg:text-4xl bg-[#D6D7C2] p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" />
+            </a>
+            <a
+              href="https://www.instagram.com/bindinijewel/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram className="text-2xl lg:text-4xl bg-[#D6D7C2] p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" />
+            </a>
+
+            <a
+              href="mailto:bindnijewel@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <SiGmail className="text-2xl lg:text-4xl bg-[#D6D7C2] p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" />
+            </a>
           </div>
-          <Button Label="Jewelry Franchise" onClick={() => setIsOpen(true)} />
+          <Button
+            Label="Click here for Jewel Franchise"
+            onClick={() => setIsOpen(true)}
+            className={"text-base lg:text-2xl"}
+          />
         </div>
       </div>
       <AnimatePresence>
@@ -151,7 +187,10 @@ const JewelFranchise = () => {
             transition={{ duration: 0.4, ease: "easeInOut" }}
             className="fixed top-0 left-0 w-full h-screen flex justify-center items-center bg-[#D6D7C2] z-50"
           >
-            <form onSubmit={handleSubmit} className="w-1/4 flex flex-col gap-2">
+            <form
+              onSubmit={handleSubmit}
+              className="lg:w-1/4 flex flex-col gap-2"
+            >
               <div>
                 <label className="block text-gray-700">Full Name</label>
                 <input
@@ -205,11 +244,9 @@ const JewelFranchise = () => {
                   className="w-full px-4 py-2 border rounded-lg focus:outline-none"
                 >
                   <option value="">Select an option</option>
-                  <option value="Kiosk - Mall of Jaipur">
-                    Kiosk – Mall of Jaipur
-                  </option>
-                  <option value="Retail Store - Jewelry Only">
-                    Retail Store – Jewelry Only
+                  <option value="Kiosk">Kiosk</option>
+                  <option value="Retail Store Jewel or Ethnic">
+                    Retail Store Jewel or Ethnic
                   </option>
                   <option value="Retail Store - Jewelry + Ethnic Wear">
                     Retail Store – Jewelry + Ethnic Wear
