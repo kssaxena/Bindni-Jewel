@@ -20,7 +20,7 @@ const Footer = () => {
 
   const toggleForm = () => setIsOpen(!isOpen);
   return (
-    <div className="border-t lg:py-10 py-5 z-50 flex flex-col-reverse lg:flex-row justify-around items-center mx-10">
+    <div className="border-t lg:py-5 py-5 z-50 flex flex-col-reverse lg:flex-row justify-around items-center mx-10">
       <div className="">
         <img
           className="lg:w-40 w-20"

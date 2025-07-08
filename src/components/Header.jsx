@@ -17,7 +17,7 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
-import { IoCall } from "react-icons/io5";
+import { IoCall, IoClose } from "react-icons/io5";
 import { SiGmail } from "react-icons/si";
 import { MdCancel } from "react-icons/md";
 import { productArray, ServiceArray } from "../Constants/Constants";
@@ -136,21 +136,19 @@ const HamburgerMenu = ({ onClose }) => {
             Menu{" "}
             <span>
               <button onClick={onClose}>
-                <MdCancel />
+                <IoClose />
               </button>
             </span>
           </h1>
         </div>
-        <section className="menu-section flex flex-col ">
+        <section className="menu-section flex flex-col justify-center items-center h-full ">
           {navItems.map((item) => (
             <Link
               key={item.path}
               to={item.path}
               onClick={onClose}
-              className={`font-Exo border border-[#EB5A2A]  my-1 mx-2 py-2 px-2 rounded-full w-3/4 flex justify-start items-center gap-5 ${
-                location.pathname === item.path
-                  ? "bg-[#EB5A2A] shadow-2xl text-white"
-                  : ""
+              className={`border-b duration-200 ease-in-out megrim-font font-extrabold text-2xl cursor-pointer hover:px-5 w-fit m-2 px-5 ${
+                location.pathname === item.path ? "shadow-2xl border-b-2" : ""
               }`}
             >
               {/* {item.icon} */}
@@ -179,7 +177,7 @@ export function Header() {
       </div>
       <div className="lg:w-3/4 w-full flex justify-center lg:justify-start items-center h-20">
         <img
-          className="lg:w-48 w-20"
+          className="lg:w-32 w-20"
           src={`https://ik.imagekit.io/pz8qfunss/oie_FNGIcUJCB8uq.png?updatedAt=1751607165073`}
         />
       </div>
@@ -211,7 +209,6 @@ export function Header() {
         >
           <FaLocationDot className="text-2xl lg:text-4xl bg-[#D6D7C2] p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" />
         </a>
-        
       </div>
       {showHamburger && (
         <HamburgerMenu onClose={() => setShowHamburger(false)} />

@@ -26,7 +26,7 @@ const Collection = () => {
 
   return (
     <div>
-      <section className="company_collection flex flex-col justify-start lg:pt-10 items-center">
+      <section className="company_collection flex flex-col justify-start lg:pt-10 items-center h-full">
         <aside className="relative">
           <nav>
             <ul className="flex gap-10 items-end">
