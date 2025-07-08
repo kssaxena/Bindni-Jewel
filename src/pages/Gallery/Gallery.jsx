@@ -15,7 +15,7 @@ const Gallery = () => {
   const shuffledImages = shuffleArray(galleryImages);
 
   return (
-    <div className="flex flex-col items-center justify-center h-full w-full select-none">
+    <div className="flex flex-col items-center justify-center h-full w-full select-none ">
       <div className="fixed h-full w-full select-none z-0 top-0 left-0 ">
         <img
           className="w-full h-full object-cover opacity-20"
@@ -23,7 +23,7 @@ const Gallery = () => {
         />
       </div>
       <div>
-        <section className="flex  lg:flex-row justify-evenly items-center lg:gap-20 gap-10 flex-col-reverse py-20">
+        <section className="flex  lg:flex-row justify-evenly items-center lg:gap-20 gap-10 flex-col-reverse lg:py-20">
           <div className="flex flex-col justify-center lg:items-end lg:w-1/2 items-center px-10 ">
             <h1 className="lg:text-5xl text-2xl cinzel-font font-medium tracking-wider lg:text-right text-center">
               We offer a wide range Collections of

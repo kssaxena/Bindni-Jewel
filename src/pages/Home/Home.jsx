@@ -39,7 +39,7 @@ const Home = () => {
             src={`https://ik.imagekit.io/pz8qfunss/Home/jwellery%20backgound.jpg?updatedAt=1751307138279`}
           />
         </div>
-        <div className="flex lg:flex-row flex-col items-center lg:justify-around justify-center gap-10 lg:gap-0 w-full lg:h-screen z-10">
+        <div className="flex lg:flex-row flex-col lg:items-center lg:justify-around justify-center gap-10 lg:gap-0 w-full lg:h-screen z-10">
           <div className="flex flex-col items-center justify-around h-fit  lg:h-3/4">
             <h1 className=" tracking-wider lg:text-[60px] text-2xl">
               Happiness of <br /> women

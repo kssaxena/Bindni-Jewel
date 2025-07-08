@@ -110,7 +110,7 @@ const HamburgerMenu = ({ onClose }) => {
     { path: "/all-collections", label: "Collection" },
     { path: "/gallery", label: "Gallery" },
     { path: "/services", label: "Services" },
-    { path: "/#", label: "Edit Password" },
+    { path: "/#", label: "About" },
   ];
 
   const handleClickOutside = (e) => {
@@ -130,8 +130,8 @@ const HamburgerMenu = ({ onClose }) => {
       onClick={handleClickOutside}
       className="fixed inset-0 flex h-screen w-screen z-50 backdrop-blur-3xl overflow-hidden snap-none"
     >
-      <div className="flex flex-col w-full">
-        <div className="h-248 flex justify-between p-6 gap-2">
+      <div className="flex flex-col  w-full">
+        <div className="h-20 flex justify-between p-6 gap-2 ">
           <h1 className="text-3xl font-Caveat font-semibold flex justify-between items-start w-full  ">
             Menu{" "}
             <span>
@@ -140,11 +140,8 @@ const HamburgerMenu = ({ onClose }) => {
               </button>
             </span>
           </h1>
-          {/* <button onClick={onClose}>
-            <MdCancel />
-          </button> */}
         </div>
-        <section className="menu-section flex flex-col">
+        <section className="menu-section flex flex-col ">
           {navItems.map((item) => (
             <Link
               key={item.path}
