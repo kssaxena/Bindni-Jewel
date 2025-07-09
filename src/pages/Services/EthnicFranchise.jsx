@@ -133,42 +133,42 @@ const EthnicFranchise = () => {
           </div>
           <div className="flex justify-center items-center w-full gap-2">
             <a
-                          href="tel:+917489535194"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <IoCall className="text-2xl lg:text-4xl bg-[#D6D7C2] p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" />
-                        </a>
-            
-                        <a
-                          href="https://wa.me/917489535194"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <FaWhatsapp className="text-2xl lg:text-4xl bg-[#D6D7C2] p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" />
-                        </a>
-                        <a
-                          href="https://maps.app.goo.gl/CZJRh2oK7hAxGvdj7"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <FaLocationDot className="text-2xl lg:text-4xl bg-[#D6D7C2] p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" />
-                        </a>
-                        <a
-                          href="https://www.instagram.com/bindinijewel/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <FaInstagram className="text-2xl lg:text-4xl bg-[#D6D7C2] p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" />
-                        </a>
-            
-                        <a
-                          href="mailto:bindnijewel@gmail.com"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <SiGmail className="text-2xl lg:text-4xl bg-[#D6D7C2] p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" />
-                        </a>
+              href="tel:+9931430899"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <IoCall className="text-2xl lg:text-4xl bg-[#D6D7C2] p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" />
+            </a>
+
+            <a
+              href="https://wa.me/917489535194"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaWhatsapp className="text-2xl lg:text-4xl bg-[#D6D7C2] p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" />
+            </a>
+            <a
+              href="https://maps.app.goo.gl/CZJRh2oK7hAxGvdj7"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLocationDot className="text-2xl lg:text-4xl bg-[#D6D7C2] p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" />
+            </a>
+            <a
+              href="https://www.instagram.com/bindinijewel/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram className="text-2xl lg:text-4xl bg-[#D6D7C2] p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" />
+            </a>
+
+            <a
+              href="mailto:bindnijewel@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <SiGmail className="text-2xl lg:text-4xl bg-[#D6D7C2] p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" />
+            </a>
           </div>
           <Button
             Label="Ethnic Wear Franchise"

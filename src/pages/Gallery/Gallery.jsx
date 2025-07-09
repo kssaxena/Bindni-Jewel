@@ -23,9 +23,9 @@ const Gallery = () => {
         />
       </div>
       <div>
-        <section className="flex  lg:flex-row justify-evenly items-center lg:gap-20 gap-10 flex-col-reverse lg:py-20">
-          <div className="flex flex-col justify-center lg:items-end lg:w-1/2 items-center px-10 ">
-            <h1 className="lg:text-5xl text-2xl cinzel-font font-medium tracking-wider lg:text-right text-center">
+        <section className="flex  lg:flex-row justify-evenly items-center lg:gap-20 gap-10 flex-col-reverse">
+          <div className="flex flex-col justify-center lg:items-end lg:w-1/2 items-center px-10 lg:px-5 ">
+            <h1 className="lg:text-4xl text-2xl cinzel-font font-medium tracking-wider lg:text-right text-center">
               We offer a wide range Collections of
             </h1>
             <ContainerTextFlip
@@ -42,7 +42,7 @@ const Gallery = () => {
           <RandomImageSlider images={galleryBannerImages} />
         </section>
         <section>
-          <h1 className="text-center w-full lg:text-7xl text-2xl caveat-font lg:py-20 tracking-wider ">
+          <h1 className="text-center w-full lg:text-7xl text-2xl font-bold lg:py-20 tracking-wider ">
             Welcome to our{" "}
             <span className="shadow-b-2xl border-b-2">Gallery</span>
           </h1>

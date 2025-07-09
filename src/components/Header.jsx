@@ -92,10 +92,10 @@ function Navbar({ className }) {
           whereTo="/about"
         >
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/blog">Blog</HoveredLink>
-            <HoveredLink href="/carrier">Carrier</HoveredLink>
-            <HoveredLink href="/about">About Bindni</HoveredLink>
-            <HoveredLink href="/contact">Contact Us</HoveredLink>
+            <HoveredLink href="/about-blog">Blog</HoveredLink>
+            <HoveredLink href="/about-carrier">Carrier</HoveredLink>
+            <HoveredLink href="/about-bindni">About Bindni</HoveredLink>
+            <HoveredLink href="/about-contact">Contact Us</HoveredLink>
           </div>
         </MenuItem>
       </Menu>
@@ -155,6 +155,34 @@ const HamburgerMenu = ({ onClose }) => {
               {item.label}
             </Link>
           ))}
+          <div className="justify-center items-center gap-2 py-10 flex ">
+            <a href="tel:+9931430899" target="_blank" rel="noopener noreferrer">
+              <IoCall className="text-3xl p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" />
+            </a>
+
+            <a
+              href="https://www.instagram.com/bindinijewel/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram className="text-3xl p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" />
+            </a>
+
+            <a
+              href="https://wa.me/917489535194"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaWhatsapp className="text-3xl p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" />
+            </a>
+            <a
+              href="https://maps.app.goo.gl/CZJRh2oK7hAxGvdj7"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLocationDot className="text-3xl p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" />
+            </a>
+          </div>
         </section>
       </div>
     </motion.div>
@@ -183,7 +211,7 @@ export function Header() {
       </div>
       <Navbar className="top-2 hidden lg:flex fixed" />
       <div className="justify-center items-center gap-2 py-10 hidden lg:flex ">
-        <a href="tel:+917489535194" target="_blank" rel="noopener noreferrer">
+        <a href="tel:+9931430899" target="_blank" rel="noopener noreferrer">
           <IoCall className="text-2xl lg:text-4xl bg-[#D6D7C2] p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" />
         </a>
 

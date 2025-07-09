@@ -390,6 +390,15 @@ export const galleryBannerImages = [
 ];
 
 export const galleryImages = [
+  "https://ik.imagekit.io/pz8qfunss/Gallery/Posts/Purple%20and%20Yellow%20Traditional%20Pongal%20Fashion%20Business%20Instagram%20Post.png?updatedAt=1752050940154",
+  "https://ik.imagekit.io/pz8qfunss/Gallery/Posts/Pink%20Beige%20And%20Yellow%20Modern%20Indian%20Fashion%20Instagram%20Post.png?updatedAt=1752050940983",
+  "https://ik.imagekit.io/pz8qfunss/Gallery/Posts/Brown%20and%20White%20Elegant%20Jewellery%20New%20Collection%20Instagram%20Post.png?updatedAt=1752050941648",
+  "https://ik.imagekit.io/pz8qfunss/Gallery/Posts/Brown%20Jewellery%20Sale%20Instagram%20Post.png?updatedAt=1752050942961",
+  "https://ik.imagekit.io/pz8qfunss/Gallery/Posts/Dark%20Green%20And%20White%20Traditional%20World%20Saree%20Day%20Instagram%20Post.png?updatedAt=1752050943060",
+  "https://ik.imagekit.io/pz8qfunss/Gallery/Posts/Brown%20And%20Beige%20Modern%20Saree%20Ad%20Instagram%20Post.png?updatedAt=1752050943025",
+  "https://ik.imagekit.io/pz8qfunss/Gallery/Posts/Red%20and%20Gold%20Traditional%20Fashion%20Sale%20Instagram%20Story%20.png?updatedAt=1752050943153",
+  "https://ik.imagekit.io/pz8qfunss/Gallery/Posts/Red%20and%20White%20Bold%20Photo%20Ugadi%20Sale%20Instagram%20Post.png?updatedAt=1752050943212",
+  "https://ik.imagekit.io/pz8qfunss/Gallery/Posts/Red%20and%20Gold%20Elegant%20Indian%20Fashion%20Festive%20Sale%20Instagram%20Story.png?updatedAt=1752050943482",
   "https://ik.imagekit.io/pz8qfunss/Products/jewel/_.jpeg?updatedAt=1751705781282",
   "https://ik.imagekit.io/pz8qfunss/Products/jewel/Journey%20Through%20the%20Rich%20Tapestry%20of%20Mughal%20History.jpeg?updatedAt=1751705781188",
   "https://ik.imagekit.io/pz8qfunss/Products/jewel/_%20(1).jpeg?updatedAt=1751705781176",
@@ -434,4 +443,146 @@ export const galleryImages = [
   "https://ik.imagekit.io/pz8qfunss/Products/bags/_%20(1).jpeg?updatedAt=1751728084245",
   "https://ik.imagekit.io/pz8qfunss/Products/bags/Make%20to%20Order_%20Shabby%20Chic%20Rustic%20Handmade%20Beautiful%20by%20qfunvalue.jpeg?updatedAt=1751728084250",
   "https://ik.imagekit.io/pz8qfunss/Products/bags/velvet.jpeg?updatedAt=1751728084260",
+];
+export const testimonials = [
+  {
+    id: 1,
+    quote:
+      "The craftsmanship in Bindni's jewelry is extraordinary. Every piece feels like it carries a story, and every time I wear it, I feel uniquely elegant.",
+    name: "Kavita",
+    title: "Elegance Redefined",
+  },
+  {
+    id: 2,
+    quote:
+      "I wore a Bindni lehenga for my cousin’s wedding, and I was flooded with compliments all night. The detail in the embroidery is simply unmatched.",
+    name: "Pooja",
+    title: "Showstopper Moments",
+  },
+  {
+    id: 3,
+    quote:
+      "Their handbags are not just beautiful—they're super functional too. I carry mine every day, and it adds flair to every outfit.",
+    name: "Ritika",
+    title: "Everyday Glamour",
+  },
+  {
+    id: 4,
+    quote:
+      "From the drape of their sarees to the shimmer in their jewels, Bindni celebrates Indian tradition in a way that's fresh and fashionable.",
+    name: "Neelam",
+    title: "Tradition Meets Trend",
+  },
+  {
+    id: 5,
+    quote:
+      "I always struggled to find jewelry that felt premium without the price tag. Bindni solved that for me. Now I can style different looks without breaking the bank.",
+    name: "Tanvi",
+    title: "Affordable Luxury",
+  },
+  {
+    id: 6,
+    quote:
+      "Each time I unwrap something from Bindni, it feels like opening a piece of art. Their packaging, finish, and quality never fail to impress.",
+    name: "Aarushi",
+    title: "Impeccable Quality",
+  },
+  {
+    id: 7,
+    quote:
+      "Shopping with Bindni is more than a purchase—it’s an experience. Their ethnic wear collection feels custom-tailored to celebrate me.",
+    name: "Shruti",
+    title: "Made for Me",
+  },
+  {
+    id: 8,
+    quote:
+      "I paired Bindni's imitation necklace with a silk saree, and people thought it was real gold! The finish is so classy.",
+    name: "Sneha",
+    title: "Looks That Deceive—in a Good Way",
+  },
+  {
+    id: 9,
+    quote:
+      "Bindni’s ethnic collection helped me reconnect with my roots in the most fashionable way possible. I feel proud wearing their outfits.",
+    name: "Meera",
+    title: "Cultural Pride",
+  },
+  {
+    id: 10,
+    quote:
+      "No one designs bridal jewelry quite like Bindni. Each piece radiates elegance and tradition—exactly what I needed for my big day.",
+    name: "Aisha",
+    title: "Perfect for Bridal Bliss",
+  },
+  {
+    id: 11,
+    quote:
+      "I purchased a set of handcrafted items from Bindni for gifting. It was a hit! Every item felt thoughtfully made and beautifully packed.",
+    name: "Namrata",
+    title: "Gift with Grace",
+  },
+  {
+    id: 12,
+    quote:
+      "From bold statement earrings to delicate chains, Bindni offers a variety that makes it easy to elevate any look instantly.",
+    name: "Rhea",
+    title: "Style for Every Mood",
+  },
+  {
+    id: 13,
+    quote:
+      "I love how Bindni mixes modern trends with timeless tradition. It’s the perfect balance I was looking for in ethnic wear.",
+    name: "Avni",
+    title: "Modern Meets Ethnic",
+  },
+  {
+    id: 14,
+    quote:
+      "Bindni has become my go-to for festive outfits. Their attention to detail and fabric quality make every celebration feel extra special.",
+    name: "Komal",
+    title: "Festive Favorite",
+  },
+  {
+    id: 15,
+    quote:
+      "Their imitation jewelry is so lightweight yet grand. I can wear it all day without discomfort and still turn heads.",
+    name: "Divya",
+    title: "Comfort in Style",
+  },
+  {
+    id: 16,
+    quote:
+      "I keep returning to Bindni because their collection keeps evolving. There’s always something fresh and fashionable to discover.",
+    name: "Sanya",
+    title: "Never Out of Style",
+  },
+  {
+    id: 17,
+    quote:
+      "The saree I ordered was beyond my expectations. The colors, texture, and drape felt so premium—it instantly became my favorite.",
+    name: "Preeti",
+    title: "Pure Grace",
+  },
+  {
+    id: 18,
+    quote:
+      "Whether it's an anniversary, wedding, or casual day out, Bindni always has the right accessories to complete my look.",
+    name: "Kiran",
+    title: "Complete Your Look",
+  },
+  {
+    id: 19,
+    quote:
+      "Bindni’s customer service is as beautiful as their products. Quick responses, great advice, and fast delivery every time!",
+    name: "Sheetal",
+    title: "Service with a Smile",
+  },
+  {
+    id: 20,
+    quote:
+      "Every piece I’ve bought from Bindni feels like a celebration. It’s not just clothing or jewelry—it’s joy wrapped in style.",
+    name: "Anjali",
+    title: "Joy in Every Detail",
+  },
 ];

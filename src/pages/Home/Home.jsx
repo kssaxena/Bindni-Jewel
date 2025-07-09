@@ -28,7 +28,7 @@ const Home = () => {
   };
 
   return (
-    <div className=" cinzel-font h-fit">
+    <div className="  h-fit">
       <section className="landing-section flex lg:flex-row flex-col items-center lg:justify-evenly justify-start w-full h-screen ">
         <div className="absolute h-full w-full select-none z-0 top-0 left-0">
           <motion.img
@@ -41,7 +41,7 @@ const Home = () => {
         </div>
         <div className="flex lg:flex-row flex-col lg:items-start lg:justify-evenly justify-center gap-10 lg:gap-0 w-full lg:h-screen z-10">
           <div className="flex flex-col items-center justify-around h-fit gap-10 lg:py-20">
-            <h1 className=" tracking-wider lg:text-[50px] text-2xl">
+            <h1 className=" tracking-widest lg:text-[50px] text-2xl cinzel-font">
               Happiness of <br /> women
             </h1>
             <motion.div
@@ -89,7 +89,7 @@ const Home = () => {
                 src={`https://ik.imagekit.io/pz8qfunss/Home/Jewellery%20Set.jpeg?updatedAt=1751285913022`}
               />
             </motion.div>
-            <h1 className="lg:text-[50px] tracking-wide text-2xl">
+            <h1 className="lg:text-[50px] tracking-wide text-2xl cinzel-font">
               Trendy jewelry
             </h1>
           </div>
@@ -111,10 +111,10 @@ const Home = () => {
           />
         </div>
         <div className="lg:w-1/2 flex flex-col lg:gap-10 gap-5 p-5 lg:p-0">
-          <h1 className=" tracking-wider lg:text-[50px] text-2xl text-center">
+          <h1 className=" tracking-wider lg:text-[40px] text-2xl text-center cinzel-font">
             Jewelry which fit Everyone's <br /> Budget and Taste !
           </h1>
-          <p className="fredoka-font text-justify">
+          <p className="text-justify">
             Jewelry that fits every budget and taste is a rare gem in today's
             market, but our collection makes it a reality. Whether you're
             looking for something elegant and timeless or trendy and bold,
@@ -141,7 +141,7 @@ const Home = () => {
         </div>
         <div className="flex lg:flex-row flex-col lg:items-center lg:justify-around justify-center gap-10 lg:gap-0 w-full lg:h-screen z-10 ">
           <div className="lex flex-col items-center justify-around h-fit gap-10 lg:py-20">
-            <h1 className=" tracking-wider lg:text-[50px] text-2xl text-center flex flex-col justify-center items-center pt-16 lg:pt-0">
+            <h1 className="cinzel-font tracking-wider lg:text-[50px] text-2xl text-center flex flex-col justify-center items-center pt-16 lg:pt-0">
               Empowering <br /> Her Smile{" "}
               <span className="flex lg:hidden">Featuring with Ethnics</span>
             </h1>
@@ -190,14 +190,14 @@ const Home = () => {
                 src={`https://ik.imagekit.io/pz8qfunss/Products/bags/Mulmul%20Manjari%20White%20Potli%20Bag.jpeg?updatedAt=1751728084204`}
               />
             </motion.div>
-            <h1 className="lg:text-[50px] tracking-wide text-2xl hidden lg:flex">
+            <h1 className="lg:text-[50px] tracking-wide text-2xl hidden lg:flex cinzel-font">
               Trendy <br /> Ethnic Wears
             </h1>
           </div>
         </div>
       </section>
       <section className="company_collection hidden lg:flex flex-col lg:pt-20 m-5 border-b pb-40 mx-5">
-        <h1 className="flex justify-center items-center text-2xl text-center w-full my-10">
+        <h1 className="flex justify-center items-center text-2xl text-center w-full my-10 cinzel-font">
           Our Collections
         </h1>
         <div className="flex flex-row ">
@@ -561,7 +561,7 @@ const Home = () => {
       <section className="flex flex-col m-5 lg:gap-0 gap-10 select-none pb-10 ">
         <div className="flex flex-col lg:flex-row justify-center items-center gap-10 ">
           <div className="lg:w-1/2 lg:p-20 flex flex-col lg:gap-10 pt-10 lg:pt-0">
-            <h1 className="hidden lg:flex tracking-wider lg:text-[50px] lg:text-right lg:justify-end text-center">
+            <h1 className="hidden lg:flex tracking-wider lg:text-[50px] lg:text-right lg:justify-end text-center cinzel-font">
               Jewelry is like <br /> the Perfect Spice
             </h1>
             <h1 className="lg:hidden flex tracking-wider text-2xl ">
@@ -569,7 +569,7 @@ const Home = () => {
             </h1>
             <TextGenerateEffect
               words={words2}
-              className="fredoka-font text-justify lg:w-3/4 indent-8"
+              className=" text-justify lg:w-3/4 indent-8"
             />
           </div>
           <div className="lg:absolute flex justify-center items-center opacity-50 mt-5 lg:mt-0 ">
@@ -583,9 +583,9 @@ const Home = () => {
           <div className="lg:w-1/2 lg:p-20 flex lg:flex-col lg:gap-10 items-end flex-col-reverse ">
             <TextGenerateEffect
               words={words1}
-              className="fredoka-font text-justify lg:w-3/4 indent-8"
+              className=" text-justify lg:w-3/4 indent-8"
             />
-            <h1 className=" tracking-wider lg:text-[50px] text-2xl  w-full lg:py-10 text-left">
+            <h1 className=" tracking-wider lg:text-[40px] text-2xl  w-full lg:py-10 text-left cinzel-font">
               It complements with
               <br /> other ingredients !!!
             </h1>

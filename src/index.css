@@ -3,8 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Knewave&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 
 @tailwind base;
@@ -16,7 +16,7 @@
 } */
 
 .cinzel-font {
-  font-family: "Cinzel ", cursive;
+  font-family: "Cinzel Decorative", cursive;
 }
 .knewave-font {
   font-family: "Knewave", cursive;
@@ -29,6 +29,10 @@
 }
 .megrim-font {
   font-family: "Megrim", cursive;
+}
+
+.montserrat-font {
+  font-family: "Montserrat", cursive;
 }
 
 @layer utilities {

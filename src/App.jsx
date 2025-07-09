@@ -12,12 +12,13 @@ import JewelFranchise from "./pages/Services/JewelFranchise";
 import EthnicFranchise from "./pages/Services/EthnicFranchise";
 import BothFranchise from "./pages/Services/BothFranchise";
 import Branding from "./pages/Services/Branding";
+import AboutUs from "./pages/About/AboutUs";
 
 // import './App.css'
 
 function App() {
   return (
-    <div className="bg-[#D6D7C2] fredoka-font w-full ">
+    <div className="bg-[#D6D7C2] fredoka-font w-full montserrat-font">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -37,6 +38,7 @@ function App() {
           element={<BothFranchise />}
         />
         <Route path="/services-branding" element={<Branding />} />
+        <Route path="/about" element={<AboutUs />} />
       </Routes>
       <Footer />
     </div>
