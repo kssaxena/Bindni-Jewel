@@ -115,7 +115,7 @@ const HamburgerMenu = ({ onClose }) => {
     { path: "/all-collections", label: "Collection" },
     { path: "/gallery", label: "Gallery" },
     { path: "/services", label: "Services" },
-    { path: "/#", label: "About" },
+    { path: "/about", label: "About" },
   ];
 
   const handleClickOutside = (e) => {
