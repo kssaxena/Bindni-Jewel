@@ -97,8 +97,8 @@ function Navbar({ className }) {
           whereTo="/about"
         >
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/about-blog">Blog</HoveredLink>
-            <HoveredLink href="/about-carrier">Carrier</HoveredLink>
+            {/* <HoveredLink href="/about-blog">Blog</HoveredLink> */}
+            {/* <HoveredLink href="/about-carrier">Carrier</HoveredLink> */}
             <HoveredLink href="/about-bindni">About Bindni</HoveredLink>
             <HoveredLink href="/about-contact">Contact Us</HoveredLink>
           </div>
