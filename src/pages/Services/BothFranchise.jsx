@@ -134,7 +134,7 @@ const BothFranchise = () => {
           </div>
           <div className="flex justify-center items-center w-full gap-2">
             <a
-              href="tel:+9931430899"
+              href="tel:+919931430899"
               target="_blank"
               rel="noopener noreferrer"
             >

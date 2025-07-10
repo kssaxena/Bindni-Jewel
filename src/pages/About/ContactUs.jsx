@@ -31,7 +31,7 @@ const ContactUs = () => {
           order?
         </h1>
       ),
-      link: "tel:+9931430899",
+      link: "tel:+919931430899",
       link_name: "Call",
       iconClassname: "text-blue-700",
     },
@@ -68,7 +68,7 @@ const ContactUs = () => {
           {" "}
           {label}{" "}
         </h1>
-        <p className="hidden lg:flex w-full text-center flex justify-center items-center">
+        <p className="hidden lg:flex w-full text-center justify-center items-center">
           {description}
         </p>
         <a
