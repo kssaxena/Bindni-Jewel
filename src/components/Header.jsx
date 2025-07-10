@@ -191,6 +191,7 @@ const HamburgerMenu = ({ onClose }) => {
 
 export function Header() {
   const [showHamburger, setShowHamburger] = useState(false);
+
   return (
     <motion.div
       initial={{ y: -100, opacity: 1 }}
@@ -209,7 +210,11 @@ export function Header() {
           src={`https://ik.imagekit.io/pz8qfunss/oie_FNGIcUJCB8uq.png?updatedAt=1751607165073`}
         />
       </div>
+
+      {/* navbar start */}
       <Navbar className="top-2 hidden lg:flex fixed" />
+      {/* navbar end  */}
+
       <div className="justify-center items-center gap-2 py-10 hidden lg:flex ">
         <a href="tel:+9931430899" target="_blank" rel="noopener noreferrer">
           <IoCall className="text-2xl lg:text-4xl bg-[#D6D7C2] p-1 rounded-full shadow hover:scale-105 duration-300 ease-in-out hover:shadow-md" />
