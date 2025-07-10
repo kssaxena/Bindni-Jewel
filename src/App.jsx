@@ -13,6 +13,8 @@ import EthnicFranchise from "./pages/Services/EthnicFranchise";
 import BothFranchise from "./pages/Services/BothFranchise";
 import Branding from "./pages/Services/Branding";
 import AboutUs from "./pages/About/AboutUs";
+import ContactUs from "./pages/About/ContactUs";
+import AboutBindni from "./pages/About/AboutBindni";
 
 // import './App.css'
 
@@ -39,6 +41,8 @@ function App() {
         />
         <Route path="/services-branding" element={<Branding />} />
         <Route path="/about" element={<AboutUs />} />
+        <Route path="/about-bindni" element={<AboutBindni />} />
+        <Route path="/about-contact" element={<ContactUs />} />
       </Routes>
       <Footer />
     </div>

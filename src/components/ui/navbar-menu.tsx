@@ -1,6 +1,7 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "motion/react";
+import { useLocation } from "react-router-dom";
 
 const transition = {
   type: "spring",
@@ -52,11 +53,33 @@ export const MenuItem = ({ setActive, active, item, children, whereTo }) => {
 };
 
 export const Menu = ({ setActive, children }) => {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  const headerBgClass =
+    location.hash === "/about" || !isScrolled ? "" : "bg-[#D6D7C2]";
+  const headerBgClass2 =
+    location.hash === "/about-contact" || !isScrolled ? "" : "bg-[#D6D7C2]";
   return (
     <nav
       // resets the state
       onMouseLeave={() => setActive(null)}
-      className="relative rounded-full   backdrop-blur-3xl shadow-2xl shadow-[#FEF9E9] dark:border-neutral-200 shadow-input flex justify-center space-x-4 px-8 py-6 text-[#1f1f1f] border-[#1f1f1f] border"
+      className={`relative rounded-full   backdrop-blur-3xl shadow-2xl shadow-[#FEF9E9] dark:border-neutral-200 shadow-input flex justify-center space-x-4 px-8 py-6 text-[#1f1f1f] border-[#1f1f1f] border ${headerBgClass} ${headerBgClass2}`}
     >
       {children}
     </nav>

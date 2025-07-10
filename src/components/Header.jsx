@@ -28,6 +28,7 @@ function Navbar({ className }) {
   return (
     <div className={cn(" max-w-2xl z-50 text-[#1f1f1f] ", className)}>
       <Menu setActive={setActive}>
+        {/* home  */}
         <MenuItem setActive={setActive} active={active} item="Home" whereTo="/">
           <div className="  text-sm gap-10 ">
             <ProductItem
@@ -38,6 +39,7 @@ function Navbar({ className }) {
             />
           </div>
         </MenuItem>
+        {/* collections  */}
         <MenuItem
           setActive={setActive}
           active={active}
@@ -56,6 +58,7 @@ function Navbar({ className }) {
             ))}
           </div>
         </MenuItem>
+        {/* gallery  */}
         <MenuItem
           setActive={setActive}
           active={active}
@@ -72,6 +75,7 @@ function Navbar({ className }) {
             />
           </div>
         </MenuItem>
+        {/* services  */}
         <MenuItem
           setActive={setActive}
           active={active}
@@ -85,6 +89,7 @@ function Navbar({ className }) {
             ))}
           </div>
         </MenuItem>
+        {/* about  */}
         <MenuItem
           setActive={setActive}
           active={active}
