@@ -33,9 +33,31 @@ const EthnicFranchise = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // You can connect this to an API or service like EmailJS or Formspree
-    console.log(formData);
-    alert("Thank you! We'll get back to you shortly.");
+
+    emailjs
+      .send(
+        process.env.SERVICE_ID, // e.g. service_xxx123
+        process.env.TEMPLATE_ID, // e.g. template_franchise
+        formData, // your form values
+        process.env.PUBLIC_ID // e.g. PUZxxxx_PUBLIC
+      )
+      .then((result) => {
+        alert("Thank you! We'll get back to you shortly.");
+        setIsOpen(false);
+        setFormData({
+          fullName: "",
+          email: "",
+          phone: "",
+          city: "",
+          businessModel: "",
+          investmentRange: "",
+          message: "",
+        });
+      })
+      .catch((error) => {
+        console.error("Email sending error:", error);
+        alert("Failed to send email. Please try again later.");
+      });
   };
 
   return (
